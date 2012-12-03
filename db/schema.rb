@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121202174707) do
+ActiveRecord::Schema.define(:version => 20121203171849) do
 
   create_table "users", :force => true do |t|
     t.integer  "cloud_id"
@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(:version => 20121202174707) do
     t.string   "fb_user"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "country"
+    t.string   "language"
   end
 
 end
