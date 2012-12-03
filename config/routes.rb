@@ -1,4 +1,12 @@
 Mychoresweb::Application.routes.draw do
+  get "users/create"
+
+  get "users/edit"
+
+  get "users/delete"
+
+  get "users/show"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

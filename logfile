@@ -1,0 +1,41 @@
+LOG:  database system was shut down at 2012-12-02 19:03:07 EST
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2012-12-02 19:07:00 EST
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2012-12-02 19:19:32 EST
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  role "mychoresweb" does not exist
+FATAL:  role "mychoresweb" does not exist
+FATAL:  role "mychoresweb" does not exist
+FATAL:  role "mychoresweb" does not exist
+FATAL:  role "mychoresweb" does not exist
+FATAL:  role "mychoresweb" does not exist
+FATAL:  role "mychoresweb" does not exist
+FATAL:  role "mychoresweb" does not exist
+FATAL:  role "mychoresweb" does not exist
+FATAL:  role "mychoresweb" does not exist
+FATAL:  role "mychoresweb" does not exist
+FATAL:  role "mychoresweb" does not exist
+FATAL:  database "mychoresweb_development" does not exist
+FATAL:  role "mychoresweb" does not exist
+FATAL:  role "mychoresweb" does not exist
+FATAL:  role "mychoresweb" does not exist
+FATAL:  role "mychoresweb" does not exist
+FATAL:  role "mychoresweb" does not exist
+FATAL:  role "mychoresweb" does not exist
+FATAL:  role "mychoresweb" does not exist
+FATAL:  role "mychoresweb" does not exist
+FATAL:  database "mychoresweb_test" does not exist

@@ -6,6 +6,10 @@ gem 'rails', '3.2.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'json'
+gem 'haml'
+gem 'rake'
+
 
 
 # Gems used only for assets and not required

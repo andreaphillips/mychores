@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  [cloud_id: 1
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  passcode: 1
+  fb_user: MyString
+
+two:
+  [cloud_id: 1
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  passcode: 1
+  fb_user: MyString
