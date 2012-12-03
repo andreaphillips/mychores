@@ -1,4 +1,10 @@
 Mychoresweb::Application.routes.draw do
+  get "root/index"
+  match '/' => "root#index"
+
+  get "root/index"
+  match '/login' => "root#login"
+
   get "users/create"
 
   get "users/edit"
