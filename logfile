@@ -40,3 +40,31 @@ FATAL:  role "mychoresweb" does not exist
 FATAL:  role "mychoresweb" does not exist
 FATAL:  database "mychoresweb_test" does not exist
 FATAL:  database "mychoresweb_test" does not exist
+ERROR:  null value in column "created_at" violates not-null constraint
+DETAIL:  Failing row contains (1, Basic, 1, 10, null, null).
+STATEMENT:  INSERT INTO public.plans(name, allowed_teams, price) VALUES ('Basic'::text, '1'::integer, '10'::integer)
+ERROR:  null value in column "created_at" violates not-null constraint
+DETAIL:  Failing row contains (2, Basic, 1, 10, null, null).
+STATEMENT:  INSERT INTO public.plans(name, allowed_teams, price) VALUES ('Basic'::text, '1'::integer, '10'::integer)
+ERROR:  invalid input syntax for integer: "Basic" at character 27
+STATEMENT:  INSERT INTO plans VALUES ('Basic',1,9.99);
+ERROR:  column "Basic" does not exist at character 54
+STATEMENT:  INSERT INTO plans (name,allowed_teams,price) VALUES ("Basic", 1 ,9.99);
+ERROR:  null value in column "created_at" violates not-null constraint
+DETAIL:  Failing row contains (3, Basic, 1, 9.99, null, null).
+STATEMENT:  INSERT INTO plans (name,allowed_teams,price) VALUES ('Basic', 1 ,9.99);
+ERROR:  column "timestamp" does not exist at character 93
+STATEMENT:  INSERT INTO plans (name,allowed_teams,price,created_at,updated_at) VALUES ('Basic', 1 ,9.99,TIMESTAMP,TIMESTAMP);
+ERROR:  invalid input syntax for type timestamp: "TIMESTAMP" at character 93
+STATEMENT:  INSERT INTO plans (name,allowed_teams,price,created_at,updated_at) VALUES ('Basic', 1 ,9.99,'TIMESTAMP','TIMESTAMP');
+ERROR:  column "spclocation" does not exist at character 32
+STATEMENT:  SELECT oid, spcname, spcowner, spclocation, spcacl, shobj_description(oid, 'pg_tablespace') AS comment FROM pg_tablespace
+ERROR:  null value in column "created_at" violates not-null constraint
+DETAIL:  Failing row contains (4, Basic, 1, 9.99, null, null).
+STATEMENT:  insert into "public"."plans" ( "name", "price", "allowed_teams") values ( 'Basic', '9.99', '1')
+FATAL:  database "sensei_test" does not exist
+FATAL:  database "sensei_test" does not exist
+LOG:  received smart shutdown request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down

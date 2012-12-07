@@ -1,11 +1,20 @@
 Mychoresweb::Application.routes.draw do
+
+
+  resources :kids
+  match "/kids/create" => "kids#create",:via => [:get, :post]
+  match "/kids/update" => "kids#update",:via => [:get, :post]
+  match "/kids/delete" => "kids#destroy",:via => :post
+
   get "root/index"
   match '/' => "root#index"
 
   get "root/index"
   match '/login' => "root#login"
 
-  get "users/create"
+  get 'users/create'
+  match "/users/create" => "users#create",:via => [:get, :post]
+
 
   get "users/edit"
 

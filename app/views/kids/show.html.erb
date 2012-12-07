@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @kid.name %>
+</p>
+
+<p>
+  <b>Sex:</b>
+  <%= @kid.sex %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @kid.age %>
+</p>
+
+<p>
+  <b>Parent:</b>
+  <%= @kid.parent_id %>
+</p>
+
+<p>
+  <b>Chore amount:</b>
+  <%= @kid.chore_amount %>
+</p>
+
+<p>
+  <b>Reward percent:</b>
+  <%= @kid.reward_percent %>
+</p>
+
+<p>
+  <b>Picture:</b>
+  <%= @kid.picture %>
+</p>
+
+
+<%= link_to 'Edit', edit_kid_path(@kid) %> |
+<%= link_to 'Back', kids_path %>

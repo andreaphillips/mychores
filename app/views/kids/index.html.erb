@@ -1,0 +1,35 @@
+<h1>Listing kids</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Sex</th>
+    <th>Age</th>
+    <th>Parent</th>
+    <th>Chore amount</th>
+    <th>Reward percent</th>
+    <th>Picture</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @kids.each do |kid| %>
+  <tr>
+    <td><%= kid.name %></td>
+    <td><%= kid.sex %></td>
+    <td><%= kid.age %></td>
+    <td><%= kid.parent_id %></td>
+    <td><%= kid.chore_amount %></td>
+    <td><%= kid.reward_percent %></td>
+    <td><%= kid.picture %></td>
+    <td><%= link_to 'Show', kid %></td>
+    <td><%= link_to 'Edit', edit_kid_path(kid) %></td>
+    <td><%= link_to 'Destroy', kid, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Kid', new_kid_path %>

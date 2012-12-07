@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyText
+  sex: MyText
+  age: 1
+  parent_id: 1
+  chore_amount: 1
+  reward_percent: 1
+  picture: 
+
+two:
+  name: MyText
+  sex: MyText
+  age: 1
+  parent_id: 1
+  chore_amount: 1
+  reward_percent: 1
+  picture: 
