@@ -1,13 +1,10 @@
 Mychoresweb::Application.routes.draw do
 
-
-  post "points/create"
-
-  get "points/show"
-
-  delete "points/delete"
-
-  post "points/update"
+  resources :points
+  match "/points/create" => "points#create", :via => [:get,:post]
+  match "/points/show" => "points#show", :via => [:get,:post]
+  match "/points/update" => "points#update", :via => [:get,:post]
+  match "/points/delete" => "points#delete", :via => [:get,:post]
 
   resources :kids
   match "/kids/create" => "kids#create",:via => [:get, :post]
