@@ -42,14 +42,11 @@ class KidsController < ApplicationController
   def create
     @kid = Kid.new(params[:kid])
 
-    respond_to do |format|
-      if @kid.save
-        format.html { redirect_to @kid, notice: 'Kid was successfully created.' }
-        format.json { render json: @kid}
-      else
-        format.html { render action: "new" }
-        format.json { render json: @kid.errors, status: :unprocessable_entity }
-      end
+
+    if @kid.save
+      render json: @kid
+    else
+      render json: @kid.errors, status: :unprocessable_entity
     end
   end
 
@@ -58,14 +55,10 @@ class KidsController < ApplicationController
   def update
     @kid = Kid.find(params[:id])
 
-    respond_to do |format|
-      if @kid.update_attributes(params[:kid])
-        format.html { redirect_to @kid, notice: 'Kid was successfully updated.' }
-        format.json { render json: @kid }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @kid.errors, status: :unprocessable_entity }
-      end
+    if @kid.update_attributes(params[:kid])
+      render json: @kid
+    else
+      render json: @kid.errors, status: :unprocessable_entity
     end
   end
 
@@ -75,9 +68,6 @@ class KidsController < ApplicationController
     @kid = Kid.find(params[:id])
     @kid.destroy
 
-    respond_to do |format|
-      format.html { redirect_to kids_url }
-      format.json { render json: "deleted" }
-    end
+    render json: "deleted"
   end
 end
