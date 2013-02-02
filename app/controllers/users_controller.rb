@@ -2,7 +2,9 @@ class UsersController < ApplicationController
 
   def create
     @user = Users.new(params[:user])
+
     if @user.save
+      @user.send_welcome_email
       render :json => @user
     else
       render :json => {:error => @user.errors}

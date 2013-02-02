@@ -21,14 +21,14 @@ class PointsController < ApplicationController
   end
 
   def delete
-    @point = Point.find(params[:id])
+    @point = Point.find_by_kid_id_and_parent_id_and_date_and_chore_id(params[:kid_id],params[:parent_id],params[:date],params[:chore_id])
     @point.destroy
 
     render json: "deleted"
   end
 
   def update
-    @point = Point.find(params[:id])
+    @point = Point.find_by_kid_id_and_parent_id_and_date_and_chore_id(params[:kid_id],params[:parent_id],params[:date],params[:chore_id])
 
       if @point.update_attributes(params[:point])
         render json: @point

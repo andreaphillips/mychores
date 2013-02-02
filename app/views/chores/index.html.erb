@@ -1,0 +1,21 @@
+<h1>Listing create_custom_chores</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @create_custom_chores.each do |create_custom_chore| %>
+  <tr>
+    <td><%= link_to 'Show', create_custom_chore %></td>
+    <td><%= link_to 'Edit', edit_create_custom_chore_path(create_custom_chore) %></td>
+    <td><%= link_to 'Destroy', create_custom_chore, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Create custom chore', new_create_custom_chore_path %>

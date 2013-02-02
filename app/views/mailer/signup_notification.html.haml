@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+  %body
+    %h1
+      Welcome to My Chores App, #{@user.first_name}
+    %p
+      You have successfully signed up to use this app,
+      Please remember your unlock code is #{@user.pass_code}, you will need this in order to unlock the app when you want to modify any behavior!
+      %br/
+    %p
+    %p Thanks for joining us and have a great day!

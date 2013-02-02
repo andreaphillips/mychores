@@ -53,7 +53,7 @@ class KidsController < ApplicationController
   # PUT /kids/1
   # PUT /kids/1.json
   def update
-    @kid = Kid.find(params[:id])
+    @kid = Kid.find_by_parent_id_and_local_id(params[:parent_id],params[:id])
 
     if @kid.update_attributes(params[:kid])
       render json: @kid
@@ -65,7 +65,7 @@ class KidsController < ApplicationController
   # DELETE /kids/1
   # DELETE /kids/1.json
   def destroy
-    @kid = Kid.find(params[:id])
+    @kid = Kid.find_by_parent_id_and_local_id(params[:parent_id],params[:id])
     @kid.destroy
 
     render json: "deleted"

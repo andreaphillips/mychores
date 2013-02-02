@@ -1,5 +1,8 @@
 Mychoresweb::Application.routes.draw do
 
+  resources :chores
+  match "chores/create" => "chores#create",:via=> [:get,:post]
+
   resources :points
   match "/points/create" => "points#create", :via => [:get,:post]
   match "/points/show" => "points#show", :via => [:get,:post]

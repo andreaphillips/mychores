@@ -14,7 +14,7 @@ Mychoresweb::Application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
@@ -34,4 +34,16 @@ Mychoresweb::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  config.action_mailer.delivery_method = :smtp
+
+  ActionMailer::Base.smtp_settings = {
+      :address  => "smtp.gmail.com",
+      :port  => 587,
+      :domain => "gmail.com",
+      :user_name  => "mychoresmail@gmail.com",
+      :password  => "losMillones2013",
+      :authentication => 'plain',
+      :authentication  => :login
+  }
 end

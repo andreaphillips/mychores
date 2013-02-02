@@ -1,0 +1,17 @@
+<%= form_for(@create_custom_chore) do |f| %>
+  <% if @create_custom_chore.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@create_custom_chore.errors.count, "error") %> prohibited this create_custom_chore from being saved:</h2>
+
+      <ul>
+      <% @create_custom_chore.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
