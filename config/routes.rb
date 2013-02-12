@@ -1,5 +1,13 @@
 Mychoresweb::Application.routes.draw do
 
+  namespace :mercury do
+    resources :images
+  end
+
+  mount Mercury::Engine => '/'
+
+  resources :pages
+
   resources :chores
   match "chores/create" => "chores#create",:via=> [:get,:post]
 
@@ -15,7 +23,7 @@ Mychoresweb::Application.routes.draw do
   match "/kids/delete" => "kids#destroy",:via => :post
 
   get "root/index"
-  match '/' => "root#index"
+  match '/' => "pages#index"
 
   get "root/index"
   match '/login' => "root#login"

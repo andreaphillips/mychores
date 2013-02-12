@@ -1,0 +1,10 @@
+%p= link_to "Edit Page", "/editor" + request.path, id: "edit_link", data: {save_url: mercury_update_page_path(@page)}
+%p= link_to "Back to main pages", pages_path
+
+#header
+  %h1#page_name.mercury-region{"data-mercury"=>"simple"}
+    = raw @page.name
+
+.content
+  #page_content.mercury-region{"data-mercury"=>"full"}
+    = raw @page.content
