@@ -21,5 +21,8 @@ class PagesController < ApplicationController
     render text: ""
   end
 
+  def read
+    @page = Page.find(params[:id])
+  end
 
 end

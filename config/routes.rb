@@ -7,6 +7,7 @@ Mychoresweb::Application.routes.draw do
   mount Mercury::Engine => '/'
 
   resources :pages
+  match 'message/read/:id/:user_id' => "pages#read"
 
   resources :chores
   match "chores/create" => "chores#create",:via=> [:get,:post]
