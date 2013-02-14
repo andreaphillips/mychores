@@ -5,9 +5,9 @@ class Notification < ActiveRecord::Base
 
   def send_notification
     pusher = Grocer.pusher(
-        certificate: "/assets/certificates/mychorescert.pem",      # required
+        certificate: "/certificates/mychorescert.pem",      # required
         passphrase:  "",                       # optional
-        gateway:     "gateway.push.apple.com", # optional; See note below.
+        gateway:     "sandbox.push.apple.com", # optional; See note below.
         port:        2195,                     # optional
         retries:     3                         # optional
     )
