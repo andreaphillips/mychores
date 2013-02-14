@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130212142549) do
+ActiveRecord::Schema.define(:version => 20130213151539) do
 
   create_table "chores", :force => true do |t|
     t.integer  "parent_id"
@@ -43,6 +43,25 @@ ActiveRecord::Schema.define(:version => 20130212142549) do
     t.datetime "updated_at",         :null => false
   end
 
+  create_table "notifications", :force => true do |t|
+    t.text     "title"
+    t.text     "recipients"
+    t.text     "sound"
+    t.integer  "badge"
+    t.integer  "page_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "page_users", :force => true do |t|
+    t.string   "device_token"
+    t.integer  "page_id"
+    t.boolean  "read"
+    t.boolean  "deleted"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
   create_table "pages", :force => true do |t|
     t.string   "name"
     t.text     "content"
@@ -67,10 +86,11 @@ ActiveRecord::Schema.define(:version => 20130212142549) do
     t.string   "email"
     t.integer  "pass_code"
     t.string   "fb_user"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
     t.string   "country"
     t.string   "language"
+    t.boolean  "active",     :default => true
   end
 
 end

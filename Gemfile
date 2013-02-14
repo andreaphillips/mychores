@@ -11,6 +11,7 @@ gem 'haml'
 gem 'rake', '10.0.2'
 gem 'mercury-rails'
 gem 'jquery-rails'
+gem 'grocer'
 
 # Gems used only for assets and not required
 # in production environments by default.

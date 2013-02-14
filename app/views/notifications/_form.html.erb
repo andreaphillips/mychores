@@ -1,0 +1,58 @@
+<%= form_for(@notification) do |f| %>
+  <% if @notification.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@notification.errors.count, "error") %> prohibited this notification from being saved:</h2>
+
+      <ul>
+      <% @notification.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %><br />
+  </div>
+  <div class="field">
+    <%= f.label :sound %>
+    <%= f.text_field :sound %><br />
+  </div>
+  <div class="field">
+    <%= f.label :badge %>
+    <%= f.number_field :badge %><br />
+  </div>
+  <div class="field">
+    <%= f.label :page_id %>
+    <%= f.select(:page_id,Page.all.collect {|p| [ p.name, p.id ] }, {:include_blank => 'None'}) %><br />
+    <div class="linkWrap">
+      <%= link_to('Preview','/message/read/' ) %>
+    </div>
+  </div>
+  <div class="recipientWrapper">
+    <p>Send To:</p>
+    <%= f.check_box :id, :name => 'recipient[all]', :value => 'all' %> Send to all<br />
+    <fieldset>
+      Filter By
+      <p>Age:</p>
+      <%= f.text_field :id, :name => 'recipient[ages]', :placeholder => '2,5,6' %><br />
+      <p>Country:</p>
+      <%= f.text_field :id, :name => 'recipient[country]', :placeholder => 'US,CR,CA' %><br />
+      <p>Language:</p>
+      <%= f.text_field :id, :name => 'recipient[language]', :placeholder => 'ES'%><br />
+      <p>Chore ID:</p>
+      <%= f.text_field :id, :name => 'recipient[chore]', :placeholder => '1,3,4'%><br />
+      <p>Specific Device Ids:</p>
+      <%= f.text_field :id, :name => 'recipient[devices]', :placeholder => '123456789,9876543'%><br />
+    </fieldset>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<script type="text/javascript">
+  $('#notification_page_id').live('change',function(){
+      $('.linkWrap a').attr('href','/message/read/'+ $(this).val()+'/0');
+  })
+</script>
