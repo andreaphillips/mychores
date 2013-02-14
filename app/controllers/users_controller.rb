@@ -1,10 +1,11 @@
 class UsersController < ApplicationController
+  skip_before_filter  :verify_authenticity_token
 
   def create
     @user = Users.new(params[:user])
 
     if @user.save
-      @user.send_welcome_email
+      #@user.send_welcome_email
       render :json => @user
     else
       render :json => {:error => @user.errors}

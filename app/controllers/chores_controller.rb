@@ -1,4 +1,5 @@
 class ChoresController < ApplicationController
+  skip_before_filter  :verify_authenticity_token
   # GET /chores
   # GET /chores.json
   def index
