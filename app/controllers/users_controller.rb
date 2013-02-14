@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   skip_before_filter  :verify_authenticity_token
 
   def create
-    @user = Users.new(params[:user])
+    @user = User.new(params[:user])
 
     if @user.save
       #@user.send_welcome_email
@@ -14,7 +14,7 @@ class UsersController < ApplicationController
 
   def edit
     if params[:id]
-      @user = Users.find(params[:id])
+      @user = User.find(params[:id])
       if @user
         render :json => @user
       else
@@ -28,7 +28,7 @@ class UsersController < ApplicationController
 
   def delete
     if params[:id]
-      @user = Users.find(params[:id])
+      @user = User.find(params[:id])
       @user.destroy
       if @user.destroyed?
         render :json => {:success => "user destroyed"}
@@ -43,7 +43,7 @@ class UsersController < ApplicationController
 
   def show
     if params[:id]
-      @user = Users.find(params[:id])
+      @user = User.find(params[:id])
       if @user
         render :json => {:success => "user destroyed"}
       else

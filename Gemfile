@@ -8,7 +8,7 @@ gem 'rails', '3.2.3'
 gem 'pg'
 gem 'json'
 gem 'haml'
-gem 'rake', '10.0.2'
+gem 'rake'
 gem 'mercury-rails'
 gem 'jquery-rails'
 gem 'grocer'
@@ -25,6 +25,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :test,:development do
+  gem "rspec-rails", "~> 2.0"
+end
 
 
 # To use ActiveModel has_secure_password

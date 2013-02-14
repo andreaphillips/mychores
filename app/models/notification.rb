@@ -6,9 +6,7 @@ class Notification < ActiveRecord::Base
 
   def send_notification
     pusher = Grocer.pusher(
-        certificate: "public/certificates/mychorescert.pem",      # required
-        gateway:     "gateway.sandbox.push.apple.com", # optional; See note below.
-        port:        2195,                     # optional
+        certificate: "db/certificates/mychorescert.pem",      # required
         retries:     3                         # optional
     )
 
@@ -16,11 +14,12 @@ class Notification < ActiveRecord::Base
     searchParams = JSON.parse(recipients)
 
     if searchParams['all'] == "1"
-      deviceIds = Users.select(:cloud_id).map(&:cloud_id)
+      deviceIds = User.select(:cloud_id).map(&:cloud_id)
     end
-
+    puts "pushing"
+    puts deviceIds
     deviceIds.each do |device|
-
+      puts "pushing each"
       notification = Grocer::Notification.new(
           device_token: device,
           alert:        title,
