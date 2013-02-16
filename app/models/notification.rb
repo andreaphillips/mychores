@@ -28,7 +28,7 @@ class Notification < ActiveRecord::Base
       )
 
       if sound != ''
-        notification.sound = sonido
+        notification.sound = sound
       end
 
       if badge != ''
