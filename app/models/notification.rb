@@ -6,7 +6,8 @@ class Notification < ActiveRecord::Base
 
   def send_notification
     pusher = Grocer.pusher(
-        certificate: "db/certificates/mychorescert.pem",      # required
+        certificate: File.join(Rails.root,"db/certificates/mychorescert.pem"),
+        port:        2195,
         retries:     3                         # optional
     )
 
@@ -22,8 +23,7 @@ class Notification < ActiveRecord::Base
       puts "pushing each"
       notification = Grocer::Notification.new(
           device_token: device,
-          alert:        title,
-          badge:        badge
+          alert:        'SUPER PUSH'
       )
 
       pusher.push(notification)
