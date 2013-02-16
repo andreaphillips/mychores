@@ -24,8 +24,16 @@ class Notification < ActiveRecord::Base
       puts "pushing each"
       notification = Grocer::Notification.new(
           device_token: device,
-          alert:        'SUPER PUSH'
+          alert:        title,
       )
+
+      if sound != ''
+        notification.sound = sonido
+      end
+
+      if badge != ''
+        notification.badge = badge
+      end
 
       pusher.push(notification)
     end
