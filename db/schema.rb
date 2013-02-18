@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130213151539) do
+ActiveRecord::Schema.define(:version => 20130216190011) do
 
   create_table "chores", :force => true do |t|
     t.integer  "parent_id"
@@ -56,10 +56,11 @@ ActiveRecord::Schema.define(:version => 20130213151539) do
   create_table "page_users", :force => true do |t|
     t.string   "device_token"
     t.integer  "page_id"
-    t.boolean  "read"
-    t.boolean  "deleted"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.boolean  "read",         :default => false
+    t.boolean  "deleted",      :default => false
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+    t.integer  "user_id"
   end
 
   create_table "pages", :force => true do |t|

@@ -23,6 +23,7 @@ class PagesController < ApplicationController
 
   def read
     @page = Page.find(params[:id])
+    @user = User.find(params[:user_id])
   end
 
 end

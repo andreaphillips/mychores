@@ -53,4 +53,15 @@ class UsersController < ApplicationController
       render :json => {:error => 'need an id'}
     end
   end
+
+  def get_messages
+    @user = User.find(params[:id])
+    @messages = @user.pages.all(:conditions => 'read = false')
+    pu = @user.page_users
+    pu.each do |p|
+      PageUser.find(p.id).update_attribute('read',true)
+    end
+    render :json => @messages
+  end
+
 end
