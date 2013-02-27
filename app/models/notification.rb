@@ -21,6 +21,7 @@ class Notification < ActiveRecord::Base
     elsif searchParams['devices'] != ''
       #have to split them
       deviceIds = searchParams['devices']
+      deviceIds = deviceIds.split(",").each {|t| t.strip!}
 
     else
       #start Searching....
@@ -50,7 +51,7 @@ class Notification < ActiveRecord::Base
 
       notification.custom = {:acme2 => ["new message", "1"]}
 
-      notification.sound = sound unless sound.blank?
+      notification.sound = 'siren.aiff' unless sound.blank?
       notification.badge = badge.to_i unless badge.blank?
 
 

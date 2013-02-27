@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   skip_before_filter  :verify_authenticity_token
 
   def create
+
     @user = User.new(params[:user])
 
     if @user.save
