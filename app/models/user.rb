@@ -32,8 +32,7 @@ class User < ActiveRecord::Base
 
     notification.custom = {:acme2 => ["new message", "1"]}
 
-    notification.sound = 'siren.aiff' unless sound.blank?
-    notification.badge = badge.to_i unless badge.blank?
+    notification.sound = 'siren.aiff'
 
 
     pusher.push(notification)
