@@ -4,3 +4,6 @@ body.overflow{
 div.container.container{
    overflow: auto;
 }
+#main{
+   overflow: auto;
+}
