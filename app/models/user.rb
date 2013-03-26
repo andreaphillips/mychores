@@ -26,7 +26,7 @@ class User < ActiveRecord::Base
     PageUser.create(:user_id => id, :device_token => cloud_id,:page_id => page.id) unless page.nil?
 
     notification = Grocer::Notification.new(
-        device_token: device,
+        device_token: cloud_id,
         alert: { "body" =>  "Welcome!"}
     )
 
