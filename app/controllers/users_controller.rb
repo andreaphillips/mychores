@@ -2,7 +2,10 @@ class UsersController < ApplicationController
   skip_before_filter  :verify_authenticity_token
 
   def create
-
+    @old = User.find_by_cloud_id(params[:user][:cloud_id])
+    if @ld
+      @old.destroy
+    end
     @user = User.new(params[:user])
 
     if @user.save
