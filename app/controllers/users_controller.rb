@@ -2,11 +2,8 @@ class UsersController < ApplicationController
   skip_before_filter  :verify_authenticity_token
 
   def create
-    @old = User.find_by_cloud_id(params[:user][:cloud_id])
-    if !@old.nil?
-      @old.destroy
-    end
     @user = User.new(params[:user])
+    @user.devices << Device.new(identifier: params[:device])
 
     if @user.save
       #@user.send_welcome_email
@@ -56,6 +53,30 @@ class UsersController < ApplicationController
     else
       render :json => {:error => 'need an id'}
     end
+  end
+
+  def check
+    @user = User.find_by_email(params[:user][:email])
+    if @user.nil?
+      render :json => {:error=> "User doesn't exist"}
+    elsif @user.pass_code != params[:user][:pass_code].to_i
+      render :json => {:error => "Passcode is Incorrect!"}
+    else
+      if !@user.devices.map(&:identifier).include?(params[:user][:device_id])
+        @user.devices << Device.new(identifier: params[:user][:device_id])
+      end
+      render :json => @user
+    end
+
+  end
+
+  def check_updates
+   @user = User.find(params[:id])
+   @kids = @user.kids
+   @kids = @kids.where("updated_at > ?",params[:last]) unless !params[:last]
+   @points = @user.kids.points
+
+   render :json => {:user => @user, :kids => @kids, :points => @points}
   end
 
   def get_messages

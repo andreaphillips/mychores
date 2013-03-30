@@ -4,7 +4,7 @@ class CreateKids < ActiveRecord::Migration
       t.text :name
       t.text :sex
       t.integer :age
-      t.integer :parent_id
+      t.references :user
       t.integer :chore_amount
       t.integer :reward_percent
       t.binary :picture

@@ -1,9 +1,10 @@
 class CreateCreateCustomChores < ActiveRecord::Migration
   def change
     create_table :chores do |t|
-      t.integer :parent_id
+      t.references :user
       t.integer :chore_id
       t.text :chore
+      t.binary :picture
 
       t.timestamps
     end

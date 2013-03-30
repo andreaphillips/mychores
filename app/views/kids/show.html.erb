@@ -17,7 +17,7 @@
 
 <p>
   <b>Parent:</b>
-  <%= @kid.parent_id %>
+  <%= @kid.user_id %>
 </p>
 
 <p>
@@ -32,7 +32,7 @@
 
 <p>
   <b>Picture:</b>
-  <%= @kid.picture %>
+  <%= ('<img src="data:image/jpg;base64,%s">' % @kid.picture).html_safe %>
 </p>
 
 

@@ -19,10 +19,13 @@ Mychoresweb::Application.routes.draw do
   match "/points/update" => "points#update", :via => [:get,:post]
   match "/points/delete" => "points#delete", :via => [:get,:post]
 
-  resources :kids
+  resources :kids do
+    resources :points
+  end
   match "/kids/create" => "kids#create",:via => [:get, :post]
   match "/kids/update" => "kids#update",:via => [:get, :post]
   match "/kids/delete" => "kids#destroy",:via => :post
+  get   "kids/thumbnail/:id" => "kids#thumbnail"
 
   get "root/index"
   match '/' => "pages#index"
@@ -31,16 +34,14 @@ Mychoresweb::Application.routes.draw do
   match '/login' => "root#login"
 
   get 'users/create'
+
   match "/users/create" => "users#create",:via => [:get, :post]
-
   match "getMessages/:id" => "users#get_messages"
-
   get "users/edit"
-
   get "users/delete"
-
   get "users/show"
-
+  match "users/check"  => "users#check", :via => [:get,:post]
+  match "users/check_updates" => "users#check_updates", :via => [:get,:post]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

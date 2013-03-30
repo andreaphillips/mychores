@@ -1,3 +1,4 @@
 class Point < ActiveRecord::Base
-  attr_accessible :kid_id, :chore_id,:date, :points, :parent_id
+  attr_accessible :chore_id,:date, :points
+  belongs_to :kid
 end

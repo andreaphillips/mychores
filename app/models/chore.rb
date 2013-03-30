@@ -1,3 +1,3 @@
 class Chore < ActiveRecord::Base
-  attr_accessible :chore, :local_chore_id, :parent_id
+  attr_accessible :chore, :local_chore_id, :user_id, :picture
 end

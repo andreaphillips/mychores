@@ -11,21 +11,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130216190011) do
+ActiveRecord::Schema.define(:version => 20130329220947) do
 
   create_table "chores", :force => true do |t|
-    t.integer  "parent_id"
+    t.integer  "user_id"
     t.integer  "local_chore_id"
     t.text     "chore"
+    t.binary   "picture"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+  end
+
+  create_table "devices", :force => true do |t|
+    t.string   "identifier"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "kids", :force => true do |t|
     t.text     "name"
     t.text     "sex"
     t.integer  "age"
-    t.string   "parent_id"
+    t.integer  "user_id"
     t.integer  "chore_amount"
     t.integer  "reward_percent"
     t.binary   "picture"
@@ -73,22 +81,21 @@ ActiveRecord::Schema.define(:version => 20130216190011) do
   create_table "points", :force => true do |t|
     t.integer  "chore_id"
     t.integer  "kid_id"
+    t.integer  "user_id"
     t.date     "date"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.integer  "points"
-    t.string   "parent_id"
   end
 
   create_table "users", :force => true do |t|
-    t.string   "cloud_id"
     t.string   "first_name"
     t.string   "last_name"
     t.string   "email"
     t.integer  "pass_code"
-    t.string   "fb_user"
-    t.datetime "created_at",                   :null => false
-    t.datetime "updated_at",                   :null => false
+    t.boolean  "admin",      :default => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
     t.string   "country"
     t.string   "language"
     t.boolean  "active",     :default => true

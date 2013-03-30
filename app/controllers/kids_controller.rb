@@ -42,7 +42,10 @@ class KidsController < ApplicationController
   # POST /kids
   # POST /kids.json
   def create
+    @user = User.find(params[:kid].delete(:user_id))
     @kid = Kid.new(params[:kid])
+
+    @kid.user = @user
 
 
     if @kid.save
@@ -55,8 +58,13 @@ class KidsController < ApplicationController
   # PUT /kids/1
   # PUT /kids/1.json
   def update
-    @kid = Kid.find_by_parent_id_and_local_id(params[:parent_id],params[:id])
-
+    if params[:kid][:id]
+      @kid = Kid.find(params[:kid][:id])
+    else
+      @kid = Kid.find_by_user_id_and_local_id(params[:kid][:user_id],params[:kid][:local_id])
+    end
+    params[:kid].delete(:user_id)
+    params[:kid].delete(:id)
     if @kid.update_attributes(params[:kid])
       render json: @kid
     else
@@ -64,12 +72,22 @@ class KidsController < ApplicationController
     end
   end
 
+
   # DELETE /kids/1
   # DELETE /kids/1.json
   def destroy
-    @kid = Kid.find_by_parent_id_and_local_id(params[:parent_id],params[:id])
-    @kid.destroy
+    @kid = Kid.find_by_user_id_and_local_id(params[:user_id],params[:id])
+    if @kid
+      @kid.destroy
+    end
 
     render json: "deleted"
   end
+
+  def thumbnail
+    @kid = Kid.find(params[:id])
+    send_data @kid.picture, :type => 'image/png',:disposition => "inline"
+  end
+
+
 end

@@ -1,0 +1,14 @@
+%h2 Points (#{@points.count()})
+%table
+  %tr
+    %th Kid
+    %th date
+    %th chore
+    %th point
+
+  - @points.each do |point|
+    %tr
+      %td= point.kid.name unless point.kid.nil?
+      %td= point.date
+      %td= point.chore_id
+      %td= point.points
