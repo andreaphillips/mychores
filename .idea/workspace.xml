@@ -33,19 +33,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="25" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
+            <state line="27" column="25" selection-start="608" selection-end="608" vertical-scroll-proportion="-3.3150685">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notification.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="notification.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/notification.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.22945206">
+            <state line="43" column="0" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -911,16 +911,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/notification.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="25" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
+        <state line="43" column="0" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/notification.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.22945206">
+        <state line="27" column="25" selection-start="608" selection-end="608" vertical-scroll-proportion="-3.3150685">
           <folding />
         </state>
       </provider>
