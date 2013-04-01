@@ -1,5 +1,5 @@
 class Kid < ActiveRecord::Base
-  attr_accessible :age, :chore_amount, :name, :picture, :reward_percent, :sex,:local_id
+  attr_accessible :age, :chore_amount, :name, :picture, :reward_percent, :sex,:local_id,:active
   belongs_to :user
   has_many :points, :dependent => :destroy
   has_many :chore_kids, :dependent => :destroy

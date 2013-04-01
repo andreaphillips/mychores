@@ -44,7 +44,7 @@ class KidsController < ApplicationController
   def create
     @user = User.find(params[:kid].delete(:user_id))
     @kid = Kid.new(params[:kid])
-
+    @kid.active = true
     @kid.user = @user
 
 
@@ -77,9 +77,8 @@ class KidsController < ApplicationController
   # DELETE /kids/1.json
   def destroy
     @kid = Kid.find_by_user_id_and_local_id(params[:user_id],params[:id])
-    if @kid
-      @kid.destroy
-    end
+    @kid.active = false
+    @kid.save
 
     render json: "deleted"
   end

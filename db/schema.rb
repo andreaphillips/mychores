@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130331030114) do
+ActiveRecord::Schema.define(:version => 20130401063725) do
 
   create_table "chore_kids", :force => true do |t|
     t.integer  "kid_id"
@@ -46,9 +46,10 @@ ActiveRecord::Schema.define(:version => 20130331030114) do
     t.integer  "chore_amount"
     t.integer  "reward_percent"
     t.binary   "picture"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
     t.integer  "local_id"
+    t.integer  "active",         :default => 1
   end
 
   create_table "mercury_images", :force => true do |t|
