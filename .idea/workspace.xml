@@ -24,10 +24,46 @@
   <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="20130401063725_add_active_to_kids.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="20130401063725_add_active_to_kids.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20130401063725_add_active_to_kids.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="43" selection-start="128" selection-end="128" vertical-scroll-proportion="0.29508197">
+            <state line="2" column="33" selection-start="61" selection-end="117" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20130331030114_chores_kids.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130331030114_chores_kids.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kids_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/kids_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="110" column="0" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.33333334">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chore_kid.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/chore_kid.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="26" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20130401145814_add_active_to_kids_chores.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130401145814_add_active_to_kids_chores.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="47" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -46,7 +82,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/points_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/points/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/users/image_test.html.haml" />
         <option value="$PROJECT_DIR$/db/migrate/20130331030114_chores_kids.rb" />
@@ -56,12 +91,13 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/point.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/chore_kid.rb" />
         <option value="$PROJECT_DIR$/app/models/notification.rb" />
         <option value="$PROJECT_DIR$/app/models/kid.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/kids_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130401071616_change_type_of_kid_active.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130401063725_add_active_to_kids.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130401145814_add_active_to_kids_chores.rb" />
+        <option value="$PROJECT_DIR$/app/models/chore_kid.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/kids_controller.rb" />
       </list>
     </option>
   </component>
@@ -185,24 +221,6 @@
               <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Models" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ModelsFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Migrations" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.MigrationsFolder" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mychoresweb" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mychoresweb" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ControllersFolderNode" />
             </PATH_ELEMENT>
@@ -245,7 +263,7 @@
       <recent name="$PROJECT_DIR$/app/assets/certificates" />
     </key>
   </component>
-  <component name="RunManager" selected="Rails.Development: mychoresweb">
+  <component name="RunManager" selected="Rake.db:migrate">
     <configuration default="false" name="notification_spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="mychoresweb" />
@@ -809,18 +827,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130401063725_add_active_to_kids.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="43" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p362@mychoresweb/gems/actionpack-3.2.3/lib/action_dispatch/http/parameters.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="246" selection-end="246" vertical-scroll-proportion="0.3313783" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="65" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.73900294" />
@@ -862,13 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/chore_kid.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="51" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130216175115_add_user_id_to_page_users.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="11" selection-start="66" selection-end="114" vertical-scroll-proportion="0.08287293" />
@@ -877,13 +876,6 @@
     <entry file="file://$PROJECT_DIR$/app/models/kid.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="95" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/kids_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="7" selection-start="1032" selection-end="1035" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -904,7 +896,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130401063725_add_active_to_kids.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="43" selection-start="128" selection-end="128" vertical-scroll-proportion="0.29508197">
+        <state line="2" column="33" selection-start="61" selection-end="117" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130331030114_chores_kids.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130401145814_add_active_to_kids_chores.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="47" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/chore_kid.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="26" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/kids_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="0" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
