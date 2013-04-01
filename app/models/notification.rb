@@ -17,7 +17,7 @@ class Notification < ActiveRecord::Base
     searchParams = JSON.parse(recipients)
 
     if searchParams['all'] == "1"
-      deviceIds = User.select(:cloud_id).map(&:cloud_id)
+      deviceIds = Device.select(:identifier).map(&:identifier)
     elsif searchParams['devices'] != ''
       #have to split them
       deviceIds = searchParams['devices']
@@ -26,21 +26,22 @@ class Notification < ActiveRecord::Base
     else
       #start Searching....
       @users = User.scoped
-      @users = @users.where(:id => Kid.where(:age => searchParams['ages'].to_i).select(:parent_id).group(:parent_id).map(&:parent_id)) unless searchParams['ages'].blank?
-      @users = @users.where(:id => Chore.where(:local_chore_id => searchParams['chore'].to_i).select(:parent_id).group(:parent_id).map(&:parent_id)) unless searchParams['chore'].blank?
+      @users = @users.where(:id => Kid.where(:age => searchParams['ages'].to_i).select(:user_id).group(:user_id).map(&:user_id)) unless searchParams['ages'].blank?
+      @users = @users.where(:id => Chore.where(:local_chore_id => searchParams['chore'].to_i).select(:user_id).group(:user_id).map(&:user_id)) unless searchParams['chore'].blank?
       @users = @users.where(:country => searchParams['country']) unless searchParams['country'].blank?
       @users = @users.where(:language => searchParams['language']) unless searchParams['language'].blank?
 
-      @users.each do |u|
-        deviceIds << u.cloud_id
+      if !@users.empty?
+        @users.each do |u|
+          deviceIds << u.devices.select(:identifier).map(&:identifier)
+        end
       end
     end
 
 
 
-
-    deviceIds.each do |device|
-      user = User.find_by_cloud_id(device)
+    deviceIds.flatten.each do |device|
+      user = Device.find_by_identifier(device).user
 
       PageUser.create(:user_id => user.id, :device_token => device,:page_id => page_id) unless page_id.blank?
 
@@ -51,7 +52,7 @@ class Notification < ActiveRecord::Base
 
       notification.custom = {:acme2 => ["new message", "1"]}
 
-      notification.sound = 'siren.aiff' unless sound.blank?
+      notification.sound = 'default'
       notification.badge = badge.to_i unless badge.blank?
 
 
