@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
   has_many :page_users, :dependent => :destroy
   has_many :pages, :through => :page_users
   has_many :devices
+  has_many :chores
 
   validates :email, :presence => true
   validates_uniqueness_of :email
@@ -15,7 +16,20 @@ class User < ActiveRecord::Base
     Mailer.signup_notification(self).deliver
   end
 
+  def find_chore_connections
+    choreConnections = Array.new
+    kids.each do |k|
+      choreConnections.push( k.find_chore_connections )
+    end
+    return choreConnections.flatten
+  end
 
-
+  def find_chore_connections_since(date)
+    choreConnections = Array.new
+    kids.each do |k|
+      choreConnections.push( k.find_chore_connections_since(date))
+    end
+    return choreConnections.flatten
+  end
 
 end

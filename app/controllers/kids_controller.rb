@@ -89,5 +89,29 @@ class KidsController < ApplicationController
     send_data @kid.picture, :type => 'image/png',:disposition => "inline"
   end
 
+  def update_chore_connection
+    params[:data].each do |c|
+      @user = User.find(c['user_id'])
+      @kid = @user.kids.where(:local_id => c['local_kid']).first
+      exists = ChoreKid.where(:kid_id => @kid.id,:chore_id => c['local_chore_id'], :begin => c['begin_date'], :end => c['end_date'])
+      if exists.empty?
+        ChoreKid.create(:kid_id => @kid.id,:chore_id => c['local_chore_id'], :begin => c['begin_date'], :end => c['end_date'])
+      end
+    end
+    render :json => {'status'=> :updated}
+  end
 
+  def delete_chore_connection
+    c = params[:data]
+    user = User.find(c[:user_id])
+    kid = user.kids.where(:local_id => c[:local_kid_id]).first
+    exists = ChoreKid.where(:kid_id => kid.id,:chore_id => c['chore_id'], :begin => c['begin'], :end => c['end'])
+    kid.points.where(:chore_id => c[:chore_id] , :date =>c[:begin]..c[:end] ).delete_all
+
+    if !exists.empty?
+      exists.delete_all()
+    end
+    render :json => {'status'=> :updated}
+
+  end
 end

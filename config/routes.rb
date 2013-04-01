@@ -20,12 +20,16 @@ Mychoresweb::Application.routes.draw do
   match "/points/delete" => "points#delete", :via => [:get,:post]
 
   resources :kids do
+    member do
+      get :thumbnail
+    end
     resources :points
   end
   match "/kids/create" => "kids#create",:via => [:get, :post]
   match "/kids/update" => "kids#update",:via => [:get, :post]
   match "/kids/delete" => "kids#destroy",:via => :post
-  get   "kids/thumbnail/:id" => "kids#thumbnail"
+  match "/kids/updateChoresConnection" => "kids#update_chore_connection",:via => :post
+  match "/kids/deleteChoresConnection" => "kids#delete_chore_connection",:via => :post
 
   get "root/index"
   match '/' => "pages#index"
@@ -42,6 +46,8 @@ Mychoresweb::Application.routes.draw do
   get "users/show"
   match "users/check"  => "users#check", :via => [:get,:post]
   match "users/check_updates" => "users#check_updates", :via => [:get,:post]
+  match "users/check_updates_since" => "users#check_updates_since", :via => [:get,:post]
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

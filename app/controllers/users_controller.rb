@@ -73,10 +73,23 @@ class UsersController < ApplicationController
   def check_updates
    @user = User.find(params[:id])
    @kids = @user.kids
-   @kids = @kids.where("updated_at > ?",params[:last]) unless !params[:last]
-   @points = @user.kids.points
+   @points = Point.for_json(@user.id)
+   @chores = @user.chores
+   @chores_connections = @user.find_chore_connections
 
-   render :json => {:user => @user, :kids => @kids, :points => @points}
+   render :json => {:user => @user, :kids => @kids, :points => @points, :chores => @chores, :connections => @chores_connections}
+  end
+
+  def check_updates_since
+    #created at
+    since = params[:since].to_datetime
+    @user = User.find(params[:id])
+    @kids = @user.kids.where('updated_at > ?',since)
+    @points = Point.for_json_since(@user.id,since)
+    @chores = @user.chores.where('updated_at > ?',since)
+    @chores_connections = @user.find_chore_connections_since(since)
+
+    render :json => {:kids => @kids, :points => @points, :chores => @chores, :connections => @chores_connections}
   end
 
   def get_messages
