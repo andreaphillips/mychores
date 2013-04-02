@@ -77,3 +77,7 @@ ERROR:  column page_users.device_id does not exist at character 102
 STATEMENT:  SELECT "pages".* FROM "pages" INNER JOIN "page_users" ON "pages"."id" = "page_users"."page_id" WHERE "page_users"."device_id" = 13
 ERROR:  column page_users.device_id does not exist at character 102
 STATEMENT:  SELECT "pages".* FROM "pages" INNER JOIN "page_users" ON "pages"."id" = "page_users"."page_id" WHERE "page_users"."device_id" = 13 AND (read = false)
+ERROR:  column "spclocation" does not exist at character 32
+STATEMENT:  SELECT oid, spcname, spcowner, spclocation, spcacl, shobj_description(oid, 'pg_tablespace') AS comment FROM pg_tablespace
+ERROR:  syntax error at or near "20" at character 208
+STATEMENT:  UPDATE "chore_kids" SET active = 0 WHERE "chore_kids"."kid_id" = 2 AND "chore_kids"."chore_id" = 25 AND "chore_kids"."begin" = '2013-04-01' AND "chore_kids"."end" = '2013-04-07' AND (updated_at = 2013-04-01 20:59:53 -0600)

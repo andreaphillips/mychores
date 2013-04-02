@@ -108,7 +108,7 @@ class KidsController < ApplicationController
     kid.points.where(:chore_id => c[:chore_id] , :date =>c[:begin]..c[:end] ).delete_all
 
     if !exists.empty?
-      exists.update_all  "active = 0"
+      exists.update_all("active = 0","updated_at = '#{Time.now}'")
     end
     render :json => {'status'=> :updated}
 
