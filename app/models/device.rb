@@ -1,8 +1,10 @@
 class Device < ActiveRecord::Base
   attr_accessible :identifier
-
   belongs_to :user
-  #after_create :send_welcome_push
+  has_many :page_users, :dependent => :destroy
+  has_many :pages, :through => :page_users
+
+  after_create :send_welcome_push
 
   def send_welcome_push
     pusher = Grocer.pusher(
@@ -15,7 +17,7 @@ class Device < ActiveRecord::Base
     PageUser.create(:user_id => self.user_id, :device_token => identifier,:page_id => page.id) unless page.nil?
     notification = Grocer::Notification.new(
         device_token: identifier,
-        alert: { "body" =>  "Welcome!"}
+        alert: { "body" =>  "Welcome to MyChores!"}
     )
     notification.custom = {:acme2 => ["new message", "1"]}
     notification.sound = 'default'

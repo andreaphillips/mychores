@@ -71,3 +71,9 @@ LOG:  database system is shut down
 LOG:  database system was shut down at 2013-04-01 20:40:26 EDT
 LOG:  database system is ready to accept connections
 LOG:  autovacuum launcher started
+ERROR:  column page_users.device_id does not exist at character 102
+STATEMENT:  SELECT "pages".* FROM "pages" INNER JOIN "page_users" ON "pages"."id" = "page_users"."page_id" WHERE "page_users"."device_id" = 13 AND (read = false)
+ERROR:  column page_users.device_id does not exist at character 102
+STATEMENT:  SELECT "pages".* FROM "pages" INNER JOIN "page_users" ON "pages"."id" = "page_users"."page_id" WHERE "page_users"."device_id" = 13
+ERROR:  column page_users.device_id does not exist at character 102
+STATEMENT:  SELECT "pages".* FROM "pages" INNER JOIN "page_users" ON "pages"."id" = "page_users"."page_id" WHERE "page_users"."device_id" = 13 AND (read = false)

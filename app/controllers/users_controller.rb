@@ -93,10 +93,9 @@ class UsersController < ApplicationController
   end
 
   def get_messages
-    @user = User.find(params[:id])
-    @messages = @user.pages.all(:conditions => 'read = false')
-    pu = @user.page_users
-    pu.each do |p|
+    @unread = PageUser.find_all_by_device_token(params[:id],:conditions => 'read = false')
+    @messages = Page.find(@unread.map(&:page_id).flatten)
+    @unread.each do |p|
       PageUser.find(p.id).update_attribute('read',true)
     end
     render :json => @messages
