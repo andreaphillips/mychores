@@ -24,116 +24,10 @@
   <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <file leaf-file-name="kids_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/kids_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="0" selection-start="2490" selection-end="2490" vertical-scroll-proportion="0.58966565">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page_user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/page_user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="51" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="device.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/device.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="48" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RailsDependency/#mychoresweb" pinned="false" current="false" current-in-tab="false">
-        <entry file="uml://RailsDependency/#mychoresweb">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>RailsDependency</ID>
-              <OriginalElement>#mychoresweb</OriginalElement>
-              <nodes>
-                <node x="532.0" y="123.06597222222217">User</node>
-                <node x="798.0" y="159.0">Kid</node>
-                <node x="0.0" y="447.6215277777777">Device</node>
-                <node x="1077.5" y="24.25">ChoreKid</node>
-                <node x="808.0" y="450.0">PageUser</node>
-                <node x="266.0" y="447.6215277777777">Page</node>
-                <node x="805.0" y="0.0">Chore</node>
-                <node x="0.0" y="658.0">Mercury::Image</node>
-                <node x="273.0" y="658.0">Notification</node>
-                <node x="1076.0" y="298.75">Point</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="Device" target="Page">
-                  <point x="93.0" y="-0.0" />
-                  <point x="-93.0" y="-0.0" />
-                </edge>
-                <edge source="Kid" target="ChoreKid">
-                  <point x="99.0" y="-62.75" />
-                  <point x="-69.5" y="35.25" />
-                </edge>
-                <edge source="Kid" target="Point">
-                  <point x="99.0" y="62.75" />
-                  <point x="-71.0" y="-0.0" />
-                </edge>
-                <edge source="Page" target="User">
-                  <point x="93.0" y="-29.75" />
-                  <point x="-93.0" y="79.25" />
-                </edge>
-                <edge source="User" target="PageUser">
-                  <point x="93.0" y="105.66666666666669" />
-                  <point x="-89.0" y="-54.33333333333337" />
-                </edge>
-                <edge source="User" target="Chore">
-                  <point x="93.0" y="-105.66666666666669" />
-                  <point x="-92.0" y="-0.0" />
-                </edge>
-                <edge source="Chore" target="ChoreKid">
-                  <point x="92.0" y="-0.0" />
-                  <point x="-69.5" y="-35.25" />
-                </edge>
-                <edge source="User" target="Kid">
-                  <point x="93.0" y="-0.0" />
-                  <point x="-99.0" y="-0.0" />
-                </edge>
-                <edge source="Page" target="PageUser">
-                  <point x="93.0" y="29.75" />
-                  <point x="718.0" y="536.8715277777777" />
-                  <point x="-89.0" y="-0.0" />
-                </edge>
-                <edge source="Device" target="PageUser">
-                  <point x="93.0" y="39.66666666666663" />
-                  <point x="266.0" y="577.1215277777777" />
-                  <point x="718.0" y="577.1215277777777" />
-                  <point x="-89.0" y="54.33333333333337" />
-                </edge>
-                <edge source="User" target="Device">
-                  <point x="-93.0" y="-79.25000000000001" />
-                  <point x="266.0" y="202.31597222222217" />
-                  <point x="93.0" y="-39.666666666666686" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.4685929648241206" x="206.171581769437" y="642.171581769437" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Association fields</Category>
-                <Category>Migration fields</Category>
-              </Categories>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="40" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0">
+            <state line="110" column="36" selection-start="2746" selection-end="2746" vertical-scroll-proportion="0.68085104">
               <folding />
             </state>
           </provider>
@@ -167,11 +61,11 @@
         <option value="$PROJECT_DIR$/db/migrate/20130401063725_add_active_to_kids.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130401145814_add_active_to_kids_chores.rb" />
         <option value="$PROJECT_DIR$/app/models/chore_kid.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/kids_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/kid.rb" />
         <option value="$PROJECT_DIR$/app/models/page_user.rb" />
         <option value="$PROJECT_DIR$/app/models/device.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/kids_controller.rb" />
       </list>
     </option>
   </component>
@@ -933,13 +827,6 @@
         <state line="1" column="26" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/kids_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="21" selection-start="2386" selection-end="2386" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/kid.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="0" selection-start="1144" selection-end="1144" vertical-scroll-proportion="1.5131086">
@@ -970,7 +857,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/page_user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="51" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
+        <state line="3" column="51" selection-start="201" selection-end="201" vertical-scroll-proportion="0.13157895">
           <folding />
         </state>
       </provider>
@@ -1043,7 +930,7 @@
               <point x="93.0" y="-39.666666666666686" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.4685929648241206" x="206.171581769437" y="642.171581769437" />
+          <settings layout="Hierarchic Group" zoom="0.4685929648241206" x="609.5067024128687" y="466.11260053619304" />
           <SelectedNodes />
           <Categories>
             <Category>Association fields</Category>
@@ -1054,21 +941,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/device.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="48" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0">
+        <state line="19" column="48" selection-start="794" selection-end="794" vertical-scroll-proportion="0.7294833">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="40" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0">
+        <state line="31" column="40" selection-start="874" selection-end="874" vertical-scroll-proportion="1.1842105">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="0" selection-start="2490" selection-end="2490" vertical-scroll-proportion="0.58966565">
+        <state line="96" column="30" selection-start="2611" selection-end="2611" vertical-scroll-proportion="0.6352584">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/kids_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="36" selection-start="2746" selection-end="2746" vertical-scroll-proportion="0.68085104">
           <folding />
         </state>
       </provider>
