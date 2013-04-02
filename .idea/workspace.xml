@@ -24,19 +24,19 @@
   <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="kids_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="kids_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/kids_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="0" selection-start="2785" selection-end="2785" vertical-scroll-proportion="0.5614035">
+            <state line="110" column="0" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="0" selection-start="2046" selection-end="2046" vertical-scroll-proportion="0.0">
+            <state line="87" column="0" selection-start="2161" selection-end="2161" vertical-scroll-proportion="0.7837838">
               <folding />
             </state>
           </provider>
@@ -45,7 +45,7 @@
       <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="839" selection-end="839" vertical-scroll-proportion="0.0">
+            <state line="29" column="35" selection-start="799" selection-end="799" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -54,7 +54,7 @@
       <file leaf-file-name="kid.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/kid.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0">
+            <state line="32" column="28" selection-start="983" selection-end="983" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -73,6 +73,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Rails console: mychoresweb" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Rails console: mychoresweb" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Rails console: mychoresweb" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -80,7 +81,6 @@
         <option value="$PROJECT_DIR$/db/migrate/20130331030114_chores_kids.rb" />
         <option value="$PROJECT_DIR$/app/models/chore.rb" />
         <option value="$PROJECT_DIR$/app/controllers/chores_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/point.rb" />
         <option value="$PROJECT_DIR$/app/models/notification.rb" />
@@ -90,9 +90,10 @@
         <option value="$PROJECT_DIR$/app/models/chore_kid.rb" />
         <option value="$PROJECT_DIR$/app/models/page_user.rb" />
         <option value="$PROJECT_DIR$/app/models/device.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/kid.rb" />
         <option value="$PROJECT_DIR$/app/controllers/kids_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/models/kid.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       </list>
     </option>
   </component>
@@ -747,10 +748,10 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21474878" sideWeight="0.5244866" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30470017" sideWeight="0.5829384" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4170616" sideWeight="0.6166937" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4170616" sideWeight="0.6166937" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5971564" sideWeight="0.29335493" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2922591" sideWeight="0.70097244" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43127963" sideWeight="0.70097244" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -966,30 +967,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/kids_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="2046" selection-end="2046" vertical-scroll-proportion="0.0">
+        <state line="110" column="0" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/kid.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0">
+        <state line="32" column="28" selection-start="983" selection-end="983" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="839" selection-end="839" vertical-scroll-proportion="0.0">
+        <state line="29" column="35" selection-start="799" selection-end="799" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/kids_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="0" selection-start="2785" selection-end="2785" vertical-scroll-proportion="0.5614035">
+        <state line="87" column="0" selection-start="2161" selection-end="2161" vertical-scroll-proportion="0.7837838">
           <folding />
         </state>
       </provider>

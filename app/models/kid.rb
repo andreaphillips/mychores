@@ -23,9 +23,11 @@ class Kid < ActiveRecord::Base
     return ch_connections
   end
 
-  def find_chore_connections_since(date)
+  def kid_find_chore_connections_since(date)
     ch_connections = Array.new
     ch_connection = ChoreKid.find_all_by_kid_id(id,:conditions=>['updated_at > ?',date])
+    puts date
+    puts id
     ch_connection.each do |c|
 
       toPush = Hash.new

@@ -82,7 +82,7 @@ class UsersController < ApplicationController
 
   def check_updates_since
     #created at
-    since = params[:since].to_datetime
+    since = params[:since]
     @user = User.find(params[:id])
     @kids = @user.kids.where('updated_at > ?',since)
     @points = Point.for_json_since(@user.id,since)

@@ -27,7 +27,7 @@ class User < ActiveRecord::Base
   def find_chore_connections_since(date)
     choreConnections = Array.new
     kids.each do |k|
-      choreConnections.push( k.find_chore_connections_since(date))
+      choreConnections.push( k.kid_find_chore_connections_since(date))
     end
     return choreConnections.flatten
   end
