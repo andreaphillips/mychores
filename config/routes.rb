@@ -47,7 +47,7 @@ Mychoresweb::Application.routes.draw do
   match "users/check"  => "users#check", :via => [:get,:post]
   match "users/check_updates" => "users#check_updates", :via => [:get,:post]
   match "users/check_updates_since" => "users#check_updates_since", :via => [:get,:post]
-
+  match "/forgotPasscode/:id" => "users#forgot_passcode", :via => [:get,:post]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

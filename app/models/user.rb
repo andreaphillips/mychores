@@ -9,13 +9,15 @@ class User < ActiveRecord::Base
 
   validates :email, :presence => true
   validates_uniqueness_of :email
-  #after_create :send_welcome_email
+  after_create :send_welcome_email
   before_destroy :delete_kids
 
   def send_welcome_email
     Mailer.signup_notification(self).deliver
   end
-
+  def forgot_passcode_mail
+    Mailer.forgot_passcode(self).deliver
+  end
   def find_chore_connections
     choreConnections = Array.new
     kids.each do |k|

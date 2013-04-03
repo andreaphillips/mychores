@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+  %body
+    %h1
+      Hi #{@user.first_name}! It seems you have forgotten your passcode,
+    %p
+      Here's your passcode!,
+      %strong
+        #{@user.pass_code}
+      Remember you will need this in order to unlock the app when you want to modify any behavior!
+      %br/
+    %p
+    %p Thanks for joining us and have a great day!

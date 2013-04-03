@@ -92,6 +92,17 @@ class UsersController < ApplicationController
     render :json => {:kids => @kids, :points => @points, :chores => @chores, :connections => @chores_connections}
   end
 
+  def forgot_passcode
+    @user = User.find(params[:id])
+
+    if Mailer.forgot_passcode(@user).deliver
+      render :json => {:status => "ok"}
+    else
+      render :json => {:status => 'ERROR'}
+    end
+
+  end
+
   def get_messages
     @unread = PageUser.find_all_by_device_token(params[:id],:conditions => 'read = false')
     @messages = Page.find(@unread.map(&:page_id).flatten)
