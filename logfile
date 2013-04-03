@@ -81,3 +81,15 @@ ERROR:  column "spclocation" does not exist at character 32
 STATEMENT:  SELECT oid, spcname, spcowner, spclocation, spcacl, shobj_description(oid, 'pg_tablespace') AS comment FROM pg_tablespace
 ERROR:  syntax error at or near "20" at character 208
 STATEMENT:  UPDATE "chore_kids" SET active = 0 WHERE "chore_kids"."kid_id" = 2 AND "chore_kids"."chore_id" = 25 AND "chore_kids"."begin" = '2013-04-01' AND "chore_kids"."end" = '2013-04-07' AND (updated_at = 2013-04-01 20:59:53 -0600)
+ERROR:  time zone "gmt-0600" not recognized at character 82
+STATEMENT:  SELECT "points".* FROM "points"  WHERE "points"."user_id" = 24 AND (updated_at > 'Wed Apr 03 2013 09:23:35 GMT-0600 (CST)')
+ERROR:  time zone "gmt-0600" not recognized at character 82
+STATEMENT:  SELECT "points".* FROM "points"  WHERE "points"."user_id" = 24 AND (updated_at > 'Wed Apr 03 2013 09:24:06 GMT-0600 (CST)')
+ERROR:  time zone "gmt-0600" not recognized at character 82
+STATEMENT:  SELECT "points".* FROM "points"  WHERE "points"."user_id" = 24 AND (updated_at > 'Wed Apr 03 2013 09:24:22 GMT-0600 (CST)')
+ERROR:  time zone "gmt-0600" not recognized at character 82
+STATEMENT:  SELECT "points".* FROM "points"  WHERE "points"."user_id" = 25 AND (updated_at > 'Wed Apr 03 2013 09:29:03 GMT-0600 (CST)')
+ERROR:  time zone "gmt-0600" not recognized at character 82
+STATEMENT:  SELECT "points".* FROM "points"  WHERE "points"."user_id" = 25 AND (updated_at > 'Wed Apr 03 2013 09:29:29 GMT-0600 (CST)')
+ERROR:  time zone "gmt-0600" not recognized at character 82
+STATEMENT:  SELECT "points".* FROM "points"  WHERE "points"."user_id" = 25 AND (updated_at > 'Wed Apr 03 2013 09:30:13 GMT-0600 (CST)')
