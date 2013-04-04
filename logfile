@@ -93,3 +93,7 @@ ERROR:  time zone "gmt-0600" not recognized at character 82
 STATEMENT:  SELECT "points".* FROM "points"  WHERE "points"."user_id" = 25 AND (updated_at > 'Wed Apr 03 2013 09:29:29 GMT-0600 (CST)')
 ERROR:  time zone "gmt-0600" not recognized at character 82
 STATEMENT:  SELECT "points".* FROM "points"  WHERE "points"."user_id" = 25 AND (updated_at > 'Wed Apr 03 2013 09:30:13 GMT-0600 (CST)')
+ERROR:  column "spclocation" does not exist at character 32
+STATEMENT:  SELECT oid, spcname, spcowner, spclocation, spcacl, shobj_description(oid, 'pg_tablespace') AS comment FROM pg_tablespace
+ERROR:  column pages.page_user_id does not exist at character 39
+STATEMENT:  SELECT  "pages".* FROM "pages"  WHERE "pages"."page_user_id" = 20 LIMIT 1

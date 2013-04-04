@@ -104,8 +104,8 @@ class UsersController < ApplicationController
   end
 
   def get_messages
-    @unread = PageUser.find_all_by_device_token(params[:id],:conditions => 'read = false')
-    @messages = Page.find(@unread.map(&:page_id).flatten)
+    @unread = PageUser.find_all_by_device_token(params[:id],:conditions => {:created_at => 1.week.ago..1.second.ago} )
+    @messages = PageUser.unread_messages(params[:id])
     @unread.each do |p|
       PageUser.find(p.id).update_attribute('read',true)
     end

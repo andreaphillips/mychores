@@ -43,6 +43,7 @@ class Notification < ActiveRecord::Base
     deviceIds.flatten.each do |device|
       user = Device.find_by_identifier(device).user
 
+
       PageUser.create(:user_id => user.id, :device_token => device,:page_id => page_id) unless page_id.blank?
 
       notification = Grocer::Notification.new(
