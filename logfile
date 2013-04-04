@@ -97,3 +97,17 @@ ERROR:  column "spclocation" does not exist at character 32
 STATEMENT:  SELECT oid, spcname, spcowner, spclocation, spcacl, shobj_description(oid, 'pg_tablespace') AS comment FROM pg_tablespace
 ERROR:  column pages.page_user_id does not exist at character 39
 STATEMENT:  SELECT  "pages".* FROM "pages"  WHERE "pages"."page_user_id" = 20 LIMIT 1
+ERROR:  invalid input syntax for type boolean: "identifier" at character 71
+STATEMENT:  SELECT "devices".* FROM "devices"  WHERE "devices"."user_id" = 1 AND ('identifier')
+ERROR:  invalid input syntax for type boolean: "identifier" at character 71
+STATEMENT:  SELECT "devices".* FROM "devices"  WHERE "devices"."user_id" = 1 AND ('identifier')
+ERROR:  invalid input syntax for type boolean: "identifier" at character 71
+STATEMENT:  SELECT "devices".* FROM "devices"  WHERE "devices"."user_id" = 1 AND ('identifier')
+ERROR:  invalid input syntax for type boolean: "identifier" at character 71
+STATEMENT:  SELECT "devices".* FROM "devices"  WHERE "devices"."user_id" = 1 AND ('identifier')
+ERROR:  invalid input syntax for type boolean: "identifier" at character 71
+STATEMENT:  SELECT "devices".* FROM "devices"  WHERE "devices"."user_id" = 1 AND ('identifier')
+ERROR:  invalid input syntax for type boolean: "identifier" at character 71
+STATEMENT:  SELECT "devices".* FROM "devices"  WHERE "devices"."user_id" = 1 AND ('identifier')
+ERROR:  invalid input syntax for type boolean: "identifier" at character 72
+STATEMENT:  SELECT  "devices".* FROM "devices"  WHERE "devices"."user_id" = 1 AND ('identifier') ORDER BY "devices"."id" DESC LIMIT 1

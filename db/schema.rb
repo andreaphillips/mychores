@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130401145814) do
+ActiveRecord::Schema.define(:version => 20130404133856) do
 
   create_table "chore_kids", :force => true do |t|
     t.integer  "kid_id"
@@ -35,8 +35,9 @@ ActiveRecord::Schema.define(:version => 20130401145814) do
   create_table "devices", :force => true do |t|
     t.string   "identifier"
     t.integer  "user_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+    t.integer  "active",     :default => 1
   end
 
   create_table "kids", :force => true do |t|

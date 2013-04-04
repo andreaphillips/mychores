@@ -4,7 +4,15 @@ class Device < ActiveRecord::Base
   has_many :page_users, :dependent => :destroy
   has_many :pages, :through => :page_users
 
+  before_create :inactivate_others
   after_create :send_welcome_push
+
+  def inactivate_others
+    others = Device.find_by_identifier(identifier)
+    if !others.nil?
+      others.update_attribute(:active,false)
+    end
+  end
 
   def send_welcome_push
     pusher = Grocer.pusher(

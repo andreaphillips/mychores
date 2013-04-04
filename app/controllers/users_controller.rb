@@ -64,6 +64,10 @@ class UsersController < ApplicationController
     else
       if !@user.devices.map(&:identifier).include?(params[:user][:device_id])
         @user.devices << Device.new(identifier: params[:user][:device_id])
+      else
+        dev = @user.devices.where(:identifier => params[:user][:device_id]).last
+        dev.inactivate_others
+        dev.update_attribute(:active,true)
       end
       render :json => @user
     end

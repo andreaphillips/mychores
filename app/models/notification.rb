@@ -17,7 +17,7 @@ class Notification < ActiveRecord::Base
     searchParams = JSON.parse(recipients)
 
     if searchParams['all'] == "1"
-      deviceIds = Device.select(:identifier).map(&:identifier)
+      deviceIds = Device.select(:identifier).where(:active => 1).map(&:identifier)
     elsif searchParams['devices'] != ''
       #have to split them
       deviceIds = searchParams['devices']
@@ -33,7 +33,7 @@ class Notification < ActiveRecord::Base
 
       if !@users.empty?
         @users.each do |u|
-          deviceIds << u.devices.select(:identifier).map(&:identifier)
+          deviceIds << u.devices.select(:identifier).where(:active,1).map(&:identifier)
         end
       end
     end
@@ -44,14 +44,14 @@ class Notification < ActiveRecord::Base
       user = Device.find_by_identifier(device).user
 
 
-      PageUser.create(:user_id => user.id, :device_token => device,:page_id => page_id) unless page_id.blank?
+      rich = PageUser.create(:user_id => user.id, :device_token => device,:page_id => page_id) unless page_id.blank?
 
       notification = Grocer::Notification.new(
           device_token: device,
           alert: { "body" =>  title}
       )
 
-      notification.custom = {:acme2 => ["new message", "1"]}
+      notification.custom = {:acme2 => ["new message", "1"]} unless page_id.blank?
 
       notification.sound = 'default'
       notification.badge = badge.to_i unless badge.blank?

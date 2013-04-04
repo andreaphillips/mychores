@@ -27,16 +27,7 @@
       <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="33" selection-start="2997" selection-end="2997" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page_user.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/page_user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="45" selection-start="254" selection-end="254" vertical-scroll-proportion="0.28125">
+            <state line="74" column="36" selection-start="1836" selection-end="1836" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -54,25 +45,16 @@
       <file leaf-file-name="notifications_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/notifications_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+            <state line="47" column="44" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notification.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="notification.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/notification.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="22" selection-start="1752" selection-end="1752" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="42" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0">
+            <state line="55" column="46" selection-start="2042" selection-end="2042" vertical-scroll-proportion="0.6960486">
               <folding />
             </state>
           </provider>
@@ -81,7 +63,7 @@
       <file leaf-file-name="device.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/device.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="18" selection-start="685" selection-end="685" vertical-scroll-proportion="0.0">
+            <state line="29" column="58" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -100,22 +82,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/point.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130401071616_change_type_of_kid_active.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130401063725_add_active_to_kids.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130401145814_add_active_to_kids_chores.rb" />
         <option value="$PROJECT_DIR$/app/models/chore_kid.rb" />
-        <option value="$PROJECT_DIR$/app/models/device.rb" />
         <option value="$PROJECT_DIR$/app/controllers/kids_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/kid.rb" />
         <option value="$PROJECT_DIR$/app/mailers/mailer.rb" />
         <option value="$PROJECT_DIR$/app/views/mailer/forgot_passcode.html.haml" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/models/notification.rb" />
         <option value="$PROJECT_DIR$/app/models/page.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/page_user.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130404133856_add_active_to_devices.rb" />
+        <option value="$PROJECT_DIR$/app/models/device.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/notification.rb" />
       </list>
     </option>
   </component>
@@ -253,12 +235,31 @@
               <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Models" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ModelsFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Migrations" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.MigrationsFolder" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mychoresweb" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mychoresweb" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ControllersFolderNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,7 +270,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,10 +283,10 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="FullScreen" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
+    <property name="dynamic.classpath" value="false" />
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.haml" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -709,21 +709,21 @@
       <method />
     </configuration>
     <list size="10">
-      <item index="0" class="java.lang.String" itemvalue="RSpec.notification_spec" />
-      <item index="1" class="java.lang.String" itemvalue="RSpec.my_example_spec" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="3" class="java.lang.String" itemvalue="IRB console.IRB console" />
-      <item index="4" class="java.lang.String" itemvalue="IRB console.Rails console: mychoresweb" />
-      <item index="5" class="java.lang.String" itemvalue="Rails.Production: mychoresweb" />
-      <item index="6" class="java.lang.String" itemvalue="Rails.Development: mychoresweb" />
-      <item index="7" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="8" class="java.lang.String" itemvalue="Rake.Spec" />
-      <item index="9" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in: spec" />
+      <item index="0" class="java.lang.String" itemvalue="Rails.Production: mychoresweb" />
+      <item index="1" class="java.lang.String" itemvalue="Rails.Development: mychoresweb" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.Spec" />
+      <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in: spec" />
+      <item index="5" class="java.lang.String" itemvalue="RSpec.notification_spec" />
+      <item index="6" class="java.lang.String" itemvalue="RSpec.my_example_spec" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="8" class="java.lang.String" itemvalue="IRB console.IRB console" />
+      <item index="9" class="java.lang.String" itemvalue="IRB console.Rails console: mychoresweb" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="IRB console.Rails console: mychoresweb" />
-        <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate" />
+        <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
+        <item index="1" class="java.lang.String" itemvalue="IRB console.Rails console: mychoresweb" />
         <item index="2" class="java.lang.String" itemvalue="IRB console.Rails console: mychoresweb" />
         <item index="3" class="java.lang.String" itemvalue="IRB console.Rails console: mychoresweb" />
         <item index="4" class="java.lang.String" itemvalue="IRB console.Rails console: mychoresweb" />
@@ -785,7 +785,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328594" sideWeight="0.49675852" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21474878" sideWeight="0.5829384" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32171798" sideWeight="0.5829384" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19448946" sideWeight="0.5829384" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4170616" sideWeight="0.6126418" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4170616" sideWeight="0.38168558" order="10" side_tool="true" content_ui="tabs" />
@@ -851,99 +851,9 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/models/notification.rb</url>
-          <line>15</line>
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="4" selection-start="2614" selection-end="2614" vertical-scroll-proportion="0.3325" />
-      </provider>
-    </entry>
-    <entry file="uml://RailsDependency/#mychoresweb">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>RailsDependency</ID>
-          <OriginalElement>#mychoresweb</OriginalElement>
-          <nodes>
-            <node x="532.0" y="123.06597222222217">User</node>
-            <node x="798.0" y="159.0">Kid</node>
-            <node x="0.0" y="447.6215277777777">Device</node>
-            <node x="1077.5" y="24.25">ChoreKid</node>
-            <node x="808.0" y="450.0">PageUser</node>
-            <node x="266.0" y="447.6215277777777">Page</node>
-            <node x="805.0" y="0.0">Chore</node>
-            <node x="0.0" y="658.0">Mercury::Image</node>
-            <node x="273.0" y="658.0">Notification</node>
-            <node x="1076.0" y="298.75">Point</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="Device" target="Page">
-              <point x="93.0" y="-0.0" />
-              <point x="-93.0" y="-0.0" />
-            </edge>
-            <edge source="Kid" target="ChoreKid">
-              <point x="99.0" y="-62.75" />
-              <point x="-69.5" y="35.25" />
-            </edge>
-            <edge source="Kid" target="Point">
-              <point x="99.0" y="62.75" />
-              <point x="-71.0" y="-0.0" />
-            </edge>
-            <edge source="Page" target="User">
-              <point x="93.0" y="-29.75" />
-              <point x="-93.0" y="79.25" />
-            </edge>
-            <edge source="User" target="PageUser">
-              <point x="93.0" y="105.66666666666669" />
-              <point x="-89.0" y="-54.33333333333337" />
-            </edge>
-            <edge source="User" target="Chore">
-              <point x="93.0" y="-105.66666666666669" />
-              <point x="-92.0" y="-0.0" />
-            </edge>
-            <edge source="Chore" target="ChoreKid">
-              <point x="92.0" y="-0.0" />
-              <point x="-69.5" y="-35.25" />
-            </edge>
-            <edge source="User" target="Kid">
-              <point x="93.0" y="-0.0" />
-              <point x="-99.0" y="-0.0" />
-            </edge>
-            <edge source="Page" target="PageUser">
-              <point x="93.0" y="29.75" />
-              <point x="718.0" y="536.8715277777777" />
-              <point x="-89.0" y="-0.0" />
-            </edge>
-            <edge source="Device" target="PageUser">
-              <point x="93.0" y="39.66666666666663" />
-              <point x="266.0" y="577.1215277777777" />
-              <point x="718.0" y="577.1215277777777" />
-              <point x="-89.0" y="54.33333333333337" />
-            </edge>
-            <edge source="User" target="Device">
-              <point x="-93.0" y="-79.25000000000001" />
-              <point x="266.0" y="202.31597222222217" />
-              <point x="93.0" y="-39.666666666666686" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.4685929648241206" x="610.0" y="466.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Migration fields</Category>
-            <Category>Association fields</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/kids_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="110" column="0" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.0" />
@@ -979,34 +889,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/device.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="18" selection-start="685" selection-end="685" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="42" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/notifications_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/notification.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="22" selection-start="1752" selection-end="1752" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/page.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="10" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
@@ -1014,16 +896,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/page_user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="33" selection-start="2997" selection-end="2997" vertical-scroll-proportion="0.0">
+        <state line="15" column="5" selection-start="574" selection-end="574" vertical-scroll-proportion="0.732899">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/page_user.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130404133856_add_active_to_devices.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="45" selection-start="254" selection-end="254" vertical-scroll-proportion="0.28125">
+        <state line="5" column="48" selection-start="133" selection-end="133" vertical-scroll-proportion="0.24115756">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130401145814_add_active_to_kids_chores.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="20" selection-start="67" selection-end="129" vertical-scroll-proportion="0.096463025">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="56" selection-start="243" selection-end="243" vertical-scroll-proportion="0.28938907">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="36" selection-start="1836" selection-end="1836" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/notifications_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="44" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/device.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="58" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/notification.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="46" selection-start="2042" selection-end="2042" vertical-scroll-proportion="0.6960486">
           <folding />
         </state>
       </provider>
