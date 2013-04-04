@@ -17,7 +17,7 @@ class Notification < ActiveRecord::Base
     searchParams = JSON.parse(recipients)
 
     if searchParams['all'] == "1"
-      deviceIds = Device.select(:identifier).where(:active => 1).map(&:identifier)
+      deviceIds = Device.select(:identifier).where(:active => true).map(&:identifier)
     elsif searchParams['devices'] != ''
       #have to split them
       deviceIds = searchParams['devices']
@@ -33,7 +33,7 @@ class Notification < ActiveRecord::Base
 
       if !@users.empty?
         @users.each do |u|
-          deviceIds << u.devices.select(:identifier).where(:active,1).map(&:identifier)
+          deviceIds << u.devices.select(:identifier).where(:active,true).map(&:identifier)
         end
       end
     end
