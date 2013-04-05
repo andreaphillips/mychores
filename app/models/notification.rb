@@ -51,7 +51,7 @@ class Notification < ActiveRecord::Base
           alert: { "body" =>  title}
       )
 
-      notification.custom = {:acme2 => ["new message", "1"]} unless page_id.blank?
+      notification.custom = {:acme2 => ["new message", "1"],:message_title => title} unless page_id.blank?
 
       notification.sound = 'default'
       notification.badge = badge.to_i unless badge.blank?
