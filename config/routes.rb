@@ -41,6 +41,8 @@ Mychoresweb::Application.routes.draw do
 
   match "/users/create" => "users#create",:via => [:get, :post]
   match "getMessages/:id" => "users#get_messages"
+  match "deleteMessage/:id" => "users#message_deleted"
+  match "readMessage/:id" => "users#message_read"
   get "users/edit"
   get "users/delete"
   get "users/show"

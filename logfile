@@ -111,3 +111,20 @@ ERROR:  invalid input syntax for type boolean: "identifier" at character 71
 STATEMENT:  SELECT "devices".* FROM "devices"  WHERE "devices"."user_id" = 1 AND ('identifier')
 ERROR:  invalid input syntax for type boolean: "identifier" at character 72
 STATEMENT:  SELECT  "devices".* FROM "devices"  WHERE "devices"."user_id" = 1 AND ('identifier') ORDER BY "devices"."id" DESC LIMIT 1
+ERROR:  column "spclocation" does not exist at character 32
+STATEMENT:  SELECT oid, spcname, spcowner, spclocation, spcacl, shobj_description(oid, 'pg_tablespace') AS comment FROM pg_tablespace
+ERROR:  operator does not exist: integer = boolean at character 146
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+STATEMENT:  SELECT "devices".* FROM "devices"  WHERE "devices"."identifier" = '0991aed56df3666a8dc43fb54ef929aab10149eceeca2624beac6ab1471a28ce' AND (active = true)
+ERROR:  operator does not exist: character varying = integer at character 76
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+STATEMENT:  SELECT "page_users".* FROM "page_users"  WHERE "page_users"."device_token" = 1 AND "page_users"."user_id" = 991 AND ("page_users"."created_at" BETWEEN '2013-03-28 19:01:02.627396' AND '2013-04-04 19:01:01.627596')
+ERROR:  operator does not exist: character varying = integer at character 76
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+STATEMENT:  SELECT "page_users".* FROM "page_users"  WHERE "page_users"."device_token" = 1 AND "page_users"."user_id" = 991 AND ("page_users"."created_at" BETWEEN '2013-03-28 19:02:17.696055' AND '2013-04-04 19:02:16.696220')
+ERROR:  operator does not exist: character varying = integer at character 76
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+STATEMENT:  SELECT "page_users".* FROM "page_users"  WHERE "page_users"."device_token" = 34 AND "page_users"."user_id" = 991 AND ("page_users"."created_at" BETWEEN '2013-03-28 19:05:25.421186' AND '2013-04-04 19:05:24.421429')
+ERROR:  operator does not exist: character varying = integer at character 76
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+STATEMENT:  SELECT "page_users".* FROM "page_users"  WHERE "page_users"."device_token" = 34 AND "page_users"."user_id" = 991 AND ("page_users"."created_at" BETWEEN '2013-03-28 19:05:47.688407' AND '2013-04-04 19:05:46.688630')

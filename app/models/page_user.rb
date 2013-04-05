@@ -4,12 +4,12 @@ class PageUser < ActiveRecord::Base
   belongs_to :device, :foreign_key => :device_token
   belongs_to :page
 
-  def self.unread_messages(user)
-    unread = self.find_all_by_device_token(user,:conditions => {:created_at => 1.week.ago..1.second.ago} )
+  def self.unread_messages(user,device)
+    unread = self.find_all_by_device_token_and_user_id(device,user,:conditions => {:created_at => 1.week.ago..1.second.ago,:deleted => false} )
     messages = []
     unread.each do |u|
       message = Hash.new
-      message["id"] = u.page_id
+      message["id"] = u.id
       message["name"] = u.page.name
       message["content"] = u.page.content
       message["read"] = u.read

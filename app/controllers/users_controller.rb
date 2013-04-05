@@ -108,12 +108,22 @@ class UsersController < ApplicationController
   end
 
   def get_messages
-    @unread = PageUser.find_all_by_device_token(params[:id],:conditions => {:created_at => 1.week.ago..1.second.ago} )
-    @messages = PageUser.unread_messages(params[:id])
-    @unread.each do |p|
-      PageUser.find(p.id).update_attribute('read',true)
-    end
+    @user_device = Device.find_all_by_identifier(params[:id], :conditions => {:active => true}).last
+    @messages = PageUser.unread_messages(@user_device.user_id,params[:id])
     render :json => @messages
+  end
+
+  def message_read
+    m = PageUser.find(params[:id]).update_attribute(:read,true)
+    render :json => {:status => "ok"}
+
+  end
+
+  def message_deleted
+    m = PageUser.find(params[:id])
+    m.deleted = true
+    m.save
+    render :json => {:status => "ok"}
   end
 
 end
