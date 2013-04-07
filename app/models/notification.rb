@@ -33,6 +33,7 @@ class Notification < ActiveRecord::Base
 
       if !@users.empty?
         @users.each do |u|
+          puts 'Sending to: '+ u.id
           deviceIds << u.devices.select(:identifier).where(:active => true).map(&:identifier)
         end
       end
@@ -44,6 +45,7 @@ class Notification < ActiveRecord::Base
       user = Device.find_by_identifier(device).user
 
       PageUser.where(:user_id => user.id, :device_token => device,:page_id => page_id).first_or_create unless page_id.blank?
+
       #rich = PageUser.create(:user_id => user.id, :device_token => device,:page_id => page_id) unless page_id.blank?
 
       notification = Grocer::Notification.new(

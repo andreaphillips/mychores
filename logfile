@@ -128,3 +128,10 @@ STATEMENT:  SELECT "page_users".* FROM "page_users"  WHERE "page_users"."device_
 ERROR:  operator does not exist: character varying = integer at character 76
 HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
 STATEMENT:  SELECT "page_users".* FROM "page_users"  WHERE "page_users"."device_token" = 34 AND "page_users"."user_id" = 991 AND ("page_users"."created_at" BETWEEN '2013-03-28 19:05:47.688407' AND '2013-04-04 19:05:46.688630')
+ERROR:  column "spclocation" does not exist at character 32
+STATEMENT:  SELECT oid, spcname, spcowner, spclocation, spcacl, shobj_description(oid, 'pg_tablespace') AS comment FROM pg_tablespace
+FATAL:  sorry, too many clients already
+FATAL:  sorry, too many clients already
+FATAL:  sorry, too many clients already
+FATAL:  sorry, too many clients already
+FATAL:  sorry, too many clients already
