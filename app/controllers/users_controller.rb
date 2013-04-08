@@ -3,10 +3,10 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(params[:user])
-    @user.devices << Device.new(identifier: params[:device])
+
+    @user.devices << Device.new(identifier: params[:device],active:true)
 
     if @user.save
-      #@user.send_welcome_email
       render :json => @user
     else
       render :json => {:error => @user.errors}

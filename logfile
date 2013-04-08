@@ -135,3 +135,7 @@ FATAL:  sorry, too many clients already
 FATAL:  sorry, too many clients already
 FATAL:  sorry, too many clients already
 FATAL:  sorry, too many clients already
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down

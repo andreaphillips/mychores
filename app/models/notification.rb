@@ -17,11 +17,11 @@ class Notification < ActiveRecord::Base
     searchParams = JSON.parse(recipients)
 
     if searchParams['all'] == "1"
-      deviceIds = Device.select(:identifier).where(:active => true).map(&:identifier)
+      deviceIds = Device.where(:active => true)
     elsif searchParams['devices'] != ''
       #have to split them
-      deviceIds = searchParams['devices']
-      deviceIds = deviceIds.split(",").each {|t| t.strip!}
+      deviceIds = searchParams['devices'].split(",").each {|t| t.strip!}
+      deviceIds = Device.find_all_by_identifier(deviceIds,:conditions => {active:true})
 
     else
       #start Searching....
@@ -33,8 +33,8 @@ class Notification < ActiveRecord::Base
 
       if !@users.empty?
         @users.each do |u|
-          puts 'Sending to: '+ u.id
-          deviceIds << u.devices.select(:identifier).where(:active => true).map(&:identifier)
+          deviceIds << u.devices.where(:active => true) .first
+
         end
       end
     end
@@ -42,14 +42,12 @@ class Notification < ActiveRecord::Base
 
 
     deviceIds.flatten.each do |device|
-      user = Device.find_by_identifier(device).user
-
-      PageUser.where(:user_id => user.id, :device_token => device,:page_id => page_id).first_or_create unless page_id.blank?
+      PageUser.where(:user_id => device.user_id, :device_token => device.identifier,:page_id => page_id).first_or_create unless page_id.blank?
 
       #rich = PageUser.create(:user_id => user.id, :device_token => device,:page_id => page_id) unless page_id.blank?
 
       notification = Grocer::Notification.new(
-          device_token: device,
+          device_token: device.identifier,
           alert: { "body" =>  title}
       )
 

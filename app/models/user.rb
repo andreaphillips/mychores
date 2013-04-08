@@ -8,7 +8,8 @@ class User < ActiveRecord::Base
   has_many :chores
 
   validates :email, :presence => true
-  validates_uniqueness_of :email
+  validates_uniqueness_of :email, :case_sensitive => false
+
   after_create :send_welcome_email
   before_destroy :delete_kids
 

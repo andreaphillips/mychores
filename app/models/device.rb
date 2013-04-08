@@ -15,6 +15,9 @@ class Device < ActiveRecord::Base
   end
 
   def send_welcome_push
+    active = true
+    self.save
+
     pusher = Grocer.pusher(
         certificate: File.join(Rails.root,"db/certificates/mychorescert.pem"),
         gateway:     "gateway.sandbox.push.apple.com", # optional; See note below.
@@ -22,7 +25,7 @@ class Device < ActiveRecord::Base
         retries:     5                         # optional
     )
     page = Page.find_by_name('Welcome!')
-    PageUser.create(:user_id => self.user_id, :device_token => identifier,:page_id => page.id) unless page.nil?
+    PageUser.create(:user_id => user_id, :device_token => identifier,:page_id => page.id) unless page.nil?
     notification = Grocer::Notification.new(
         device_token: identifier,
         alert: { "body" =>  "Welcome to MyChores!"}
