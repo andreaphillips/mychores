@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
 
-    @user.devices << Device.new(identifier: params[:device],active:true)
+    @user.devices << Device.new(identifier: params[:device])
 
     if @user.save
       render :json => @user

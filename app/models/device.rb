@@ -4,20 +4,18 @@ class Device < ActiveRecord::Base
   has_many :page_users, :dependent => :destroy
   has_many :pages, :through => :page_users
 
-  before_create :inactivate_others
-  after_create :send_welcome_push
+  after_create :inactivate_others,:send_welcome_push
 
   def inactivate_others
     others = Device.find_by_identifier(identifier)
     if !others.nil?
       others.update_attribute(:active,false)
     end
+    self.active = true
+    self.save
   end
 
   def send_welcome_push
-    active = true
-    self.save
-
     pusher = Grocer.pusher(
         certificate: File.join(Rails.root,"db/certificates/mychorescert.pem"),
         gateway:     "gateway.sandbox.push.apple.com", # optional; See note below.

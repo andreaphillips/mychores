@@ -66,9 +66,9 @@ Mychoresweb::Application.configure do
   ActionMailer::Base.smtp_settings = {
       :address  => "smtp.gmail.com",
       :port  => 587,
-      :domain => "gmail.com",
-      :user_name  => "mychoresmail@gmail.com",
-      :password  => "losMillones2013",
+      :domain => "mychoresapp.com",
+      :user_name  => "info@mychoresapp.com",
+      :password  => "infoMyChores2013",
       :authentication => 'plain',
       :authentication  => :login
   }
