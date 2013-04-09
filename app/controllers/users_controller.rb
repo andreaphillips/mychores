@@ -2,11 +2,12 @@ class UsersController < ApplicationController
   skip_before_filter  :verify_authenticity_token
 
   def create
-    @user = User.new(params[:user])
+    @user = User.create(params[:user])
 
-    @user.devices << Device.new(identifier: params[:device])
+    device = params[:device] == 'nopush' ? params[:device]+@user.id.to_s : params[:device]
+    @user.devices << Device.new(identifier: device, active:true)
 
-    if @user.save
+    if @user
       render :json => @user
     else
       render :json => {:error => @user.errors}
@@ -63,7 +64,8 @@ class UsersController < ApplicationController
       render :json => {:error => "Passcode is Incorrect!"}
     else
       if !@user.devices.map(&:identifier).include?(params[:user][:device_id])
-        @user.devices << Device.new(identifier: params[:user][:device_id])
+        device = params[:user][:device_id] == 'nopush' ? params[:user][:device_id]+@user.id.to_s : [:user][:device_id]
+        @user.devices << Device.create(identifier: device,active:true)
       else
         dev = @user.devices.where(:identifier => params[:user][:device_id]).last
         dev.inactivate_others

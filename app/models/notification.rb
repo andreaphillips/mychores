@@ -44,20 +44,21 @@ class Notification < ActiveRecord::Base
     deviceIds.flatten.each do |device|
       PageUser.where(:user_id => device.user_id, :device_token => device.identifier,:page_id => page_id).first_or_create unless page_id.blank?
 
-      #rich = PageUser.create(:user_id => user.id, :device_token => device,:page_id => page_id) unless page_id.blank?
+      if !device.identifier.include?('nopush')
+        notification = Grocer::Notification.new(
+            device_token: device.identifier,
+            alert: { "body" =>  title}
+        )
 
-      notification = Grocer::Notification.new(
-          device_token: device.identifier,
-          alert: { "body" =>  title}
-      )
+        notification.custom = {:acme2 => ["new message", "1"],:message_title => title} unless page_id.blank?
 
-      notification.custom = {:acme2 => ["new message", "1"],:message_title => title} unless page_id.blank?
-
-      notification.sound = 'default'
-      notification.badge = badge.to_i unless badge.blank?
+        notification.sound = 'default'
+        notification.badge = badge.to_i unless badge.blank?
 
 
-      pusher.push(notification)
+        pusher.push(notification)
+      end
+
     end
   end
 
