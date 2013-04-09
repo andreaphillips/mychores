@@ -26,6 +26,9 @@ class Device < ActiveRecord::Base
         retries:     5                         # optional
     )
     page = Page.find_by_name('Welcome!')
+    puts "after create send welcome push"
+    puts identifier
+
     PageUser.create(:user_id => user_id, :device_token => identifier,:page_id => page.id) unless page.nil?
     if !identifier.include?('nopush')
       notification = Grocer::Notification.new(
