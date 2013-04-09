@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
   validates :email, :presence => true
   validates_uniqueness_of :email, :case_sensitive => false
 
-  #after_create :send_welcome_email
+  after_create :send_welcome_email
   before_destroy :delete_kids
 
   def send_welcome_email

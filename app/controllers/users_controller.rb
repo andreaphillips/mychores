@@ -65,10 +65,23 @@ class UsersController < ApplicationController
     else
       if !@user.devices.map(&:identifier).include?(params[:user][:device_id])
         device = params[:user][:device_id] == 'nopush' ? params[:user][:device_id]+@user.id.to_s : [:user][:device_id]
-        @user.devices << Device.create(identifier: device,active:true)
+        if !@user.devices.map(&:identifier).include?(device)
+          @user.devices << Device.create(identifier: device,active:true)
+        else
+          devi = @user.devices.where(:identifier => device).last
+          others = Device.find_all_by_identifier(device)
+          others.each do |o|
+            o.update_attribute(:active,false)
+          end
+          devi.update_attribute(:active,true)
+        end
+
       else
         dev = @user.devices.where(:identifier => params[:user][:device_id]).last
-        dev.inactivate_others
+        others = Device.find_all_by_identifier(params[:user][:device_id])
+        others.each do |o|
+          o.update_attribute(:active,false)
+        end
         dev.update_attribute(:active,true)
       end
       render :json => @user
