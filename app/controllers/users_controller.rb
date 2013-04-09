@@ -64,7 +64,7 @@ class UsersController < ApplicationController
       render :json => {:error => "Passcode is Incorrect!"}
     else
       if !@user.devices.map(&:identifier).include?(params[:user][:device_id])
-        device = params[:user][:device_id] == 'nopush' ? 'nopush'+@user.id.to_s : [:user][:device_id]
+        device = params[:user][:device_id] == 'nopush' ? 'nopush'+@user.id.to_s : params[:user][:device_id]
         if !@user.devices.map(&:identifier).include?(device)
           @user.devices << Device.create(identifier: device,active:true)
         else
