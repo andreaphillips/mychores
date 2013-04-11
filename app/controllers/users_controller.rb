@@ -147,15 +147,22 @@ class UsersController < ApplicationController
   end
 
   def message_read
-    m = PageUser.find(params[:id]).update_attribute(:read,true)
+    m = PageUser.find(params[:id])
+    pages = PageUser.find_all_by_page_id_and_user_id(m.page_id, m.user_id)
+    pages.each do |p|
+      p.update_attribute(:read,true)
+    end
+
     render :json => {:status => "ok"}
 
   end
 
   def message_deleted
     m = PageUser.find(params[:id])
-    m.deleted = true
-    m.save
+    pages = PageUser.find_all_by_page_id_and_user_id(m.page_id, m.user_id)
+    pages.each do |p|
+      p.update_attribute(:deleted,true)
+    end
     render :json => {:status => "ok"}
   end
 
