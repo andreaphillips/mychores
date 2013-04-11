@@ -123,8 +123,26 @@ class UsersController < ApplicationController
   end
 
   def get_messages
-    @user_device = Device.find_all_by_identifier(params[:id], :conditions => {:active => true}).last
-    @messages = PageUser.unread_messages(@user_device.user_id,params[:id])
+    device = params[:id]
+    user = params[:user_id]
+
+    if device && user
+      #first check device exists
+      @user = User.find(user)
+      if !@user.devices.map(&:identifier).include?(device)
+        @user.devices << Device.create(identifier: device,active:true)
+      end
+      @messages = PageUser.unread_messages(user)
+    elsif !user && device
+      @user_device = Device.find_all_by_identifier(device, :conditions => {:active => true})
+      if !@user_device.empty?
+        @messages = PageUser.unread_messages(@user_device[0].user_id)
+      end
+    elsif !device && user
+        @messages = PageUser.unread_messages(user)
+    else
+        @messages = []
+    end
     render :json => @messages
   end
 
