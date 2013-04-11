@@ -22,6 +22,6 @@ class Device < ActiveRecord::Base
     page = Page.find_by_name('Welcome!')
     puts "after create send welcome push"
     puts identifier
-    PageUser.create(:user_id => user_id, :device_token => identifier,:page_id => page.id) unless page.nil?
+    PageUser.create(:user_id => user_id, :device_token => identifier,:page_id => page.id) unless page.nil? || user_id.nil?
   end
 end

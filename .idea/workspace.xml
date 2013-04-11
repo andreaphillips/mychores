@@ -27,7 +27,25 @@
       <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="162" column="52" selection-start="4612" selection-end="4612" vertical-scroll-proportion="0.81155014">
+            <state line="133" column="44" selection-start="3783" selection-end="3783" vertical-scroll-proportion="0.2857143">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notification.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/notification.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="34" selection-start="1585" selection-end="1585" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="device.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/device.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="38" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -63,12 +81,12 @@
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/app/models/notification.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/models/device.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/models/page_user.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/device.rb" />
       </list>
     </option>
   </component>
@@ -794,13 +812,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p362@mychoresweb/gems/actionpack-3.2.3/lib/action_controller/metal.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="0" selection-start="4448" selection-end="4448" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p362@mychoresweb/gems/activesupport-3.2.3/lib/active_support/hash_with_indifferent_access.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="0" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0">
@@ -811,13 +822,6 @@
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="59" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/device.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="19" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -878,14 +882,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="24" selection-start="1249" selection-end="1249" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="dbDummy://dbElement:/f5e9a20b/25955d88-f0d7-4851-ba9f-d57482b17a0e/.public.devices">
       <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/notification.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="24" selection-start="1249" selection-end="1249" vertical-scroll-proportion="0.0">
+        <state line="41" column="34" selection-start="1585" selection-end="1585" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/device.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="38" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -897,7 +915,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="52" selection-start="4612" selection-end="4612" vertical-scroll-proportion="0.81155014">
+        <state line="133" column="44" selection-start="3783" selection-end="3783" vertical-scroll-proportion="0.2857143">
           <folding />
         </state>
       </provider>
