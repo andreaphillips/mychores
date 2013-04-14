@@ -5,7 +5,7 @@ class Device < ActiveRecord::Base
   has_many :pages, :through => :page_users
 
   before_create :inactivate_others
-  after_create :send_welcome_push
+  #after_create :send_welcome_push
 
   def inactivate_others
     others = Device.find_all_by_identifier(identifier)
@@ -18,10 +18,4 @@ class Device < ActiveRecord::Base
     end
   end
 
-  def send_welcome_push
-    page = Page.find_by_name('Welcome!')
-    puts "after create send welcome push"
-    puts identifier
-    PageUser.create(:user_id => user_id, :device_token => identifier,:page_id => page.id) unless page.nil? || user_id.nil?
-  end
 end

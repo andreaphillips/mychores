@@ -13,6 +13,7 @@ gem 'mercury-rails'
 gem 'jquery-rails'
 gem 'grocer'
 gem 'newrelic_rpm'
+gem 'thin'
 
 # Gems used only for assets and not required
 # in production environments by default.

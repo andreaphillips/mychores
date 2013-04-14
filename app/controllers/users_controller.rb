@@ -8,6 +8,7 @@ class UsersController < ApplicationController
     @user.devices << Device.new(identifier: device, active:true)
 
     if @user
+      @user.send_welcome_push
       render :json => @user
     else
       render :json => {:error => @user.errors}

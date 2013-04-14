@@ -35,4 +35,10 @@ class User < ActiveRecord::Base
     return choreConnections.flatten
   end
 
+  def send_welcome_push
+    page = Page.find_by_name('Welcome!')
+    puts "after create send welcome push"
+    PageUser.create(:user_id => id, :device_token => self.devices.first.identifier,:page_id => page.id) unless page.nil? || self.devices.first.identifier.nil?
+  end
+
 end
