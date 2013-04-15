@@ -3,6 +3,7 @@ class Kid < ActiveRecord::Base
   belongs_to :user
   has_many :points, :dependent => :destroy
   has_many :chore_kids, :dependent => :destroy
+  has_many :rewards
 
   def points
     Point.where(:kid_id => self.id)

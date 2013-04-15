@@ -1,5 +1,9 @@
 Mychoresweb::Application.routes.draw do
 
+  post "rewards/create"
+
+  post "rewards/update"
+
   namespace :mercury do
     resources :images
   end

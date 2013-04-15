@@ -96,8 +96,9 @@ class UsersController < ApplicationController
    @points = Point.for_json(@user.id)
    @chores = @user.chores
    @chores_connections = @user.find_chore_connections
+   @rewards = Reward.get_from_ids(@user.kids.map(&:id))
 
-   render :json => {:user => @user, :kids => @kids, :points => @points, :chores => @chores, :connections => @chores_connections}
+   render :json => {:user => @user, :kids => @kids, :points => @points, :chores => @chores, :connections => @chores_connections, :rewards => @rewards}
   end
 
   def check_updates_since
@@ -108,8 +109,9 @@ class UsersController < ApplicationController
     @points = Point.for_json_since(@user.id,since)
     @chores = @user.chores.where('updated_at > ?',since)
     @chores_connections = @user.find_chore_connections_since(since)
+    @rewards = Reward.get_from_ids(@user.kids.map(&:id))
 
-    render :json => {:kids => @kids, :points => @points, :chores => @chores, :connections => @chores_connections}
+    render :json => {:kids => @kids, :points => @points, :chores => @chores, :connections => @chores_connections, :rewards => @rewards}
   end
 
   def forgot_passcode
