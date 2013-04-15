@@ -24,55 +24,19 @@
   <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="rewards_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/rewards_controller.rb">
+      <file leaf-file-name="chores_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/chores_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
+            <state line="43" column="0" selection-start="824" selection-end="824" vertical-scroll-proportion="0.24242425">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kid.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/kid.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="17" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reward.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/reward.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="25" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="71" selection-start="2452" selection-end="2452" vertical-scroll-proportion="0.6969697">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="39" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="points_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/points_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="51" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.0">
+            <state line="97" column="22" selection-start="2650" selection-end="2669" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -87,10 +51,6 @@
   </component>
   <component name="GeneratorOptions">
     <option name="VCS_SHOW_CONFIRMATION" value="true" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Rails console: mychoresweb" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Rails console: mychoresweb" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -310,10 +270,10 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="FullScreen" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
+    <property name="dynamic.classpath" value="false" />
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.haml" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -323,7 +283,7 @@
       <recent name="$PROJECT_DIR$/app/assets/certificates" />
     </key>
   </component>
-  <component name="RunManager" selected="Rake.db:migrate">
+  <component name="RunManager" selected="Rails.Development: mychoresweb">
     <configuration default="false" name="notification_spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="mychoresweb" />
@@ -805,22 +765,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="730" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328594" sideWeight="0.49675852" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328594" sideWeight="0.49027553" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21474878" sideWeight="0.5829384" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21474878" sideWeight="0.5845182" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23662885" sideWeight="0.5845182" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41548184" sideWeight="0.6004862" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24068071" sideWeight="0.5845182" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41548184" sideWeight="0.6004862" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4170616" sideWeight="0.39384118" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51974726" sideWeight="0.6969206" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35387045" sideWeight="0.6969206" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328594" sideWeight="0.49027553" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328594" sideWeight="0.49027553" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -880,32 +840,14 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p362@mychoresweb/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p362@mychoresweb/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="640" selection-end="640" vertical-scroll-proportion="0.31195337">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p362@mychoresweb/gems/newrelic_rpm-3.6.0.83/lib/new_relic/agent/method_tracer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="237" column="0" selection-start="10374" selection-end="10374" vertical-scroll-proportion="0.3090909">
-          <folding />
-        </state>
+        <state line="237" column="0" selection-start="10374" selection-end="10374" vertical-scroll-proportion="0.3090909" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p362@mychoresweb/gems/newrelic_rpm-3.6.0.83/lib/new_relic/agent/instrumentation/controller_instrumentation.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="293" column="0" selection-start="13679" selection-end="13679" vertical-scroll-proportion="0.3090909">
-          <folding />
-        </state>
+        <state line="293" column="0" selection-start="13679" selection-end="13679" vertical-scroll-proportion="0.3090909" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/kids_controller.rb">
@@ -917,9 +859,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="9" selection-start="263" selection-end="263" vertical-scroll-proportion="0.06122449">
-          <folding />
-        </state>
+        <state line="15" column="9" selection-start="263" selection-end="263" vertical-scroll-proportion="0.06122449" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130329220947_create_devices.rb">
@@ -945,14 +885,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/points_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="51" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.0">
+        <state line="46" column="51" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.4090909">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="39" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+        <state line="11" column="39" selection-start="175" selection-end="175" vertical-scroll-proportion="0.045454547">
           <folding />
         </state>
       </provider>
@@ -972,11 +912,11 @@
           <nodes>
             <node x="" y="">User</node>
             <node x="" y="">Kid</node>
-            <node x="" y="">Reward</node>
             <node x="" y="">Device</node>
+            <node x="" y="">Reward</node>
             <node x="" y="">ChoreKid</node>
-            <node x="" y="">PageUser</node>
             <node x="" y="">Page</node>
+            <node x="" y="">PageUser</node>
             <node x="" y="">Chore</node>
             <node x="" y="">Mercury::Image</node>
             <node x="" y="">Notification</node>
@@ -984,12 +924,13 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.115489749430524" x="908.2360628956503" y="329.71641587809177" />
+          <settings layout="Hierarchic Group" zoom="1.115489749430524" x="908.0" y="330.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Association fields</Category>
             <Category>Migration fields</Category>
+            <Category>Association fields</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -1007,9 +948,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="dbDummy://dbElement:/f5e9a20b/25955d88-f0d7-4851-ba9f-d57482b17a0e/.public.chore_kids">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="71" selection-start="2452" selection-end="2452" vertical-scroll-proportion="0.6969697">
+        <state line="97" column="22" selection-start="2650" selection-end="2669" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/chores_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="824" selection-end="824" vertical-scroll-proportion="0.24242425">
           <folding />
         </state>
       </provider>
