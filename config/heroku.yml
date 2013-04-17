@@ -5,7 +5,7 @@ development:
     GOOGLE_ANALYTICS: "UA-32863580-1"
     MAIL_HOST: "localhost:3000"
 
-production:
+staging:
   app: mychoresweb
   config:
     BUNDLE_WITHOUT: "development:test"
