@@ -24,19 +24,19 @@
   <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="chores_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/chores_controller.rb">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="824" selection-end="824" vertical-scroll-proportion="0.24242425">
+            <state line="28" column="104" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <file leaf-file-name="newrelic.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/newrelic.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="22" selection-start="2650" selection-end="2669" vertical-scroll-proportion="0.0">
+            <state line="137" column="48" selection-start="5922" selection-end="5922" vertical-scroll-proportion="0.57570714">
               <folding />
             </state>
           </provider>
@@ -55,7 +55,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/mailer/forgot_passcode.html.haml" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/app/models/notification.rb" />
@@ -71,6 +70,7 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/reward.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/config/newrelic.yml" />
       </list>
     </option>
   </component>
@@ -82,9 +82,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="63" />
     <option name="y" value="22" />
-    <option name="width" value="1280" />
-    <option name="height" value="730" />
+    <option name="width" value="1175" />
+    <option name="height" value="725" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -158,7 +159,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,44 +219,13 @@
               <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Models" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ModelsFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mychoresweb" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mychoresweb" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Models" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ModelsFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Migrations" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.MigrationsFolder" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mychoresweb" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mychoresweb" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ControllersFolderNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,10 +239,10 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="FullScreen" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="Ruby.ViewRefParam.DefaultExtension" value="html.haml" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="Ruby.ViewRefParam.DefaultExtension" value="html.haml" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -764,15 +733,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="730" extended-state="6" />
-    <editor active="false" />
+    <frame x="63" y="22" width="1175" height="725" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328594" sideWeight="0.49675852" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21474878" sideWeight="0.5845182" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21474878" sideWeight="0.5845182" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24068071" sideWeight="0.5845182" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41548184" sideWeight="0.6004862" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24889283" sideWeight="0.5845182" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41548184" sideWeight="0.6004862" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4170616" sideWeight="0.39384118" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35387045" sideWeight="0.6969206" order="2" side_tool="false" content_ui="tabs" />
@@ -840,11 +809,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p362@mychoresweb/gems/newrelic_rpm-3.6.0.83/lib/new_relic/agent/method_tracer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="237" column="0" selection-start="10374" selection-end="10374" vertical-scroll-proportion="0.3090909" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p362@mychoresweb/gems/newrelic_rpm-3.6.0.83/lib/new_relic/agent/instrumentation/controller_instrumentation.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="293" column="0" selection-start="13679" selection-end="13679" vertical-scroll-proportion="0.3090909" />
@@ -852,56 +816,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/kids_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="13" selection-start="2313" selection-end="2313" vertical-scroll-proportion="0.6233766">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="9" selection-start="263" selection-end="263" vertical-scroll-proportion="0.06122449" />
+        <state line="101" column="13" selection-start="2313" selection-end="2313" vertical-scroll-proportion="0.6233766" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130329220947_create_devices.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130331030114_chores_kids.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="148" selection-end="179" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="6" selection-start="148" selection-end="179" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130414180309_create_rewards.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="22" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/points_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="51" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.4090909">
-          <folding />
-        </state>
+        <state line="46" column="51" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.4090909" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="39" selection-start="175" selection-end="175" vertical-scroll-proportion="0.045454547">
-          <folding />
-        </state>
+        <state line="11" column="39" selection-start="175" selection-end="175" vertical-scroll-proportion="0.045454547" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/rewards_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="uml://RailsDependency/#mychoresweb">
@@ -936,16 +881,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/kid.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="17" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/reward.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="11" column="25" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="dbDummy://dbElement:/f5e9a20b/25955d88-f0d7-4851-ba9f-d57482b17a0e/.public.chore_kids">
@@ -953,16 +894,26 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/chores_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="31" selection-start="1821" selection-end="1821" vertical-scroll-proportion="1.8564357" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="22" selection-start="2650" selection-end="2669" vertical-scroll-proportion="0.0">
+        <state line="97" column="22" selection-start="2650" selection-end="2669" vertical-scroll-proportion="0.02529511" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="104" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/chores_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/newrelic.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="824" selection-end="824" vertical-scroll-proportion="0.24242425">
+        <state line="137" column="48" selection-start="5922" selection-end="5922" vertical-scroll-proportion="0.57570714">
           <folding />
         </state>
       </provider>
